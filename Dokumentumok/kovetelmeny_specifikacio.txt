@@ -23,6 +23,22 @@ jelszavukat email címmel tudják módosítani.
 A rendszerre vonatkozó pályázat, törvények, rendeletek, szabványok és ajánlások leírása
 Jelenlegi üzleti folyamatok modellje
 Igényelt üzleti folyamatok modellje
+
 Követelmény lista
+    - Regisztráció: regisztráció felület, ahol a felhasználó megtduja adni az adatit.
+    - Regisztrációt visszaigazoló email: a felhasználó kap egy igazoló emailt a regisztrációjáról.
+    - Bejelentkezés: bejelentkezési felület, ahol a felhasználó az email címe és a jelszava megadásával tud be lépni.
+    - Profi megjelenítése: az adott felhasználó adatainak ki listázása.
+    - Profil szerkesztése: a felhasználó tudja módosítani az adatit, jelszó módosítása, csak email címmel lehet.
+    - Főoldal: a főoldalon a könyvek ki legyenek listázva, valamint jelenjenek meg ott hírek, illetve az aktuális akciókról szóló információk.
+    - Keresési lehetőség: a felhasználó különböző értékek alapján tudja ki listázni a könyveket, mint pl.: cím, ár, író, kategória … stb.
+    - Kosárba helyezés: a felhasználó kosárba tudja rakni a megvenni kivánt könyvet vagy könyveket.
+    - Darab szám megadása: a felhasználó a könyv kosárba tétele előtt, lehetőséget kell biztosítani számára, arr, hogy a megadja azt, hogy hány darabot kíván venni
+    az adott könyvből.
+    - Kosár tartalmának megjelenítése: a felhasználó a rendelés le adása során meg tudja nézni a kosár tartalmát. Tehát annak ki listázása, valamint a végösszeg 
+    feltüntetése.
+    - Kosár tartalmának módosítása: a felhasználó tudjon könyveket törölni a megvenni kívánt könyvek listájáról.
+    - Értékelés: a felhasználók tudjanak értékelések leadni az adott könyvekről.
+
 Irányított és szabad szöveges riportok szövege
 Fogalomszótár
