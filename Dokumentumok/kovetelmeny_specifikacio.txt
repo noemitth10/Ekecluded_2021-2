@@ -17,7 +17,8 @@ fedeles, puha fedeles, illetve díszitett kötésű könyvről van-e szó. Tehá
 kell őket sorolni kategóriákba. Az íróknál a nevet, születési időt, kortárs íróról van-e szó, az országot ahol születet és leírást az adott íróról kell tárolni 
 képpel együtt. A szerepköröket is tárolni kell, azaz azt hogy adminisztrátorról van-e szó vagy esetleg felhasználóról. A felhasználó által le adott rendeléseknél 
 tárolni kell a felhasználó id-jét, a rendelés számot, a felhasználó lakcímét, a rendelt könyvek számát, illetve a rendelés végösszegét. A kosár tartalmát lehessen
-ki listázni, illetve annak tartalmát módosítani. Tehát a törölni könyveket a listáról.
+ki listázni, illetve annak tartalmát módosítani. Tehát a törölni könyveket a listáról. A felhasználók regisztrációkor kapnak egy igazoló email-t, valamint a 
+jelszavukat email címmel tudják módosítani.
 
 A rendszerre vonatkozó pályázat, törvények, rendeletek, szabványok és ajánlások leírása
 Jelenlegi üzleti folyamatok modellje
