@@ -1,0 +1,11 @@
+Jelenlegi helyzet leírása
+Vágyálom rendszer leírása
+A rendszerre vonatkozó pályázat, törvények, rendeletek, szabványok és ajánlások leírása
+Jelenlegi üzleti folyamatok modellje
+Igényelt üzleti folyamatok modellje
+Követelmény lista
+Használati esetek
+Képernyőtervek
+Forgatókönyvek
+Funkció - követelmény megfeleltetés
+Fogalomszótár
