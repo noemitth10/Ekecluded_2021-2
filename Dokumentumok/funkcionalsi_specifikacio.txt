@@ -18,7 +18,7 @@ kell őket sorolni kategóriákba. Az íróknál a nevet, születési időt, kor
 képpel együtt. A szerepköröket is tárolni kell, azaz azt hogy adminisztrátorról van-e szó vagy esetleg felhasználóról. A felhasználó által le adott rendeléseknél 
 tárolni kell a felhasználó id-jét, a rendelés számot, a felhasználó lakcímét, a rendelt könyvek számát, illetve a rendelés végösszegét. A kosár tartalmát lehessen
 ki listázni, illetve annak tartalmát módosítani. Tehát a törölni könyveket a listáról. A felhasználók regisztrációkor kapnak egy igazoló email-t, valamint a 
-jelszavukat email címmel tudják módosítani.
+jelszavukat email címmel tudják módosítani. Valamint a felhazsnálók tudjanak értékeléseket leadni a könyvekről.
 
 A rendszerre vonatkozó pályázat, törvények, rendeletek, szabványok és ajánlások leírása
 Jelenlegi üzleti folyamatok modellje
