@@ -1,4 +1,7 @@
 Jelenlegi helyzet leírása
+Manapság az online vásárlás egyre jobban hódít. Egyre több webáruház jön létre, aminek köszönhetően kényelmesebben lehet vársárolni, így az emberek otthonról, 
+sorban állás nélkül megtudják venni azt, amire szükségük van. Az interneten rengeteg webáruház található, ahol különböző dolgokat is árulnak. A mai világban az
+emberek, már a könyveket is nagy részben online vásárolják meg. Így a mi tervünk is ehhez kapcsolódik. Ugyanis egy könyves webáruházat szeretnénk létrehozni.
 Vágyálom rendszer leírása
 A rendszerre vonatkozó pályázat, törvények, rendeletek, szabványok és ajánlások leírása
 Jelenlegi üzleti folyamatok modellje
