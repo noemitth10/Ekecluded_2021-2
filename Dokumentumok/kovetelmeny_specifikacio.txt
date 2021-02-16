@@ -31,6 +31,7 @@ Jelenlegi üzleti folyamatok modellje
 Igényelt üzleti folyamatok modellje
 
 Követelmény lista
+    Funkcionális követelmények:
     - Regisztráció: regisztráció felület, ahol a felhasználó megtduja adni az adatit.
     - Regisztrációt visszaigazoló email: a felhasználó kap egy igazoló emailt a regisztrációjáról.
     - Bejelentkezés: bejelentkezési felület, ahol a felhasználó az email címe és a jelszava megadásával tud be lépni.
@@ -45,6 +46,19 @@ Követelmény lista
     feltüntetése.
     - Kosár tartalmának módosítása: a felhasználó tudjon könyveket törölni a megvenni kívánt könyvek listájáról.
     - Értékelés: a felhasználók tudjanak értékelések leadni az adott könyvekről.
+
+    Nem funkcionális követelmények:
+    - A weboldalt interneten lhet elérni és akkor is megfelelően jelenik meg.
+    - Különböző eszközökön megfelelően jelenjen meg a weblap.
+    - A témára vonatkozó adatokat tartalmazza, azaz ne jelenjenek meg oda nem illő tartamak.
+    - A felhasználók könnyen eltudjanak benne igazodni.
+    - A felhasználók könnyedén kitudják keresni az őket érdeklő könyveket.
+    - A főoldalon minden friss információnak meg kell jelenie.
+    - A funkciók a leírtaknak megfelelően működjenek.
+    - A felhasználók tudják szerkeszteni a profiljuk adatait, tudjanak vásárolni, böngészni, kosár tartalmát ki listázni, valamint azt módosítani, megvenni kívánt 
+    könyvek számát megadni, illetve rendelést leadni. Viszont az összes olyan cselekvést, amit csak is az adminisztrátorok tehetnek meg azt ne tudják meg tenni. 
+    Pl.: új könyvet felvenni, vagy egy adott könyv adatait szerkeszteni.
+    - Az adminisztrátorok tudják kezelni a felhasználókat, illetve a könyveket.
 
 Irányított és szabad szöveges riportok szövege
 Fogalomszótár
