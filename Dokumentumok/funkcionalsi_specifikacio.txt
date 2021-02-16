@@ -34,6 +34,14 @@ azaz az oldalon az összes olyan információ fenn lesz, amelyre szüksége van.
 Rendelésnél fel lesz tünteve a vásárolt könyvek darab száma, valamint a rendelés végösszege.
 
 Jelenlegi üzleti folyamatok modellje
+A webáruháznak lesznek vásárlói, illetve adminisztrátorai. A követelmény listában feltüntetett funkciónális és nem funkcionális követeményeknek megfelelően fog
+majd elkészülni. Regisztrációs, illetve bejelentkezési felületek lesznek. Szerepkör szerint lesznek felosztva a felhasználók. Azaz lesznek adminiszrrátorok és sima
+egyszerű felhasználók, azaz vásárlók. Az adminisztrátorok kezelik a felhasználókat, illetve a könyveket. A vásárlók, pedig böngésznek a könyvek között, a könyveket
+ki listázhatják különböző értékek szerint. Vásárolhatnak, egy könyvbőll több példányt is. A kosár tartalmát megnézhetik, illetve módosíthatják azt. Valamint a saját
+adataikat is szerkeszthetik. Mivel folyamatosan új könyvek jelennek meg, ezért az áruházban vásárolható könyvek listája ennek megfelelően fog folyamatosan bővülni.
+Ennél a webáruháznál nyomtatott könyvek mellet, e-book-kat is vehetnek a vásárlók. A webáruház mindig naprakész, friss információkkal fog szolgálni a felhasználók
+számára.
+
 Igényelt üzleti folyamatok modellje
 
 Követelmény lista
