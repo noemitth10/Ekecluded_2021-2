@@ -43,6 +43,8 @@ Ennél a webáruháznál nyomtatott könyvek mellet, e-book-kat is vehetnek a v�
 számára.
 
 Igényelt üzleti folyamatok modellje
+A webáruház interneten keresztül lesz elérhető. A megrendelő igényeinek megfelelően fog elkészülni, a megadott határidőre. A felhasználókat csoportosítani fogaja
+adminisztrátorok és sima, egyzserű felhasználók, azaz vásárlók szerint. A témának megfelelően az áruk könyvek lesznek, amelyek lehetnek nyomtatottak és e-book-ok.
 
 Követelmény lista
     Funkcionális követelmények:
