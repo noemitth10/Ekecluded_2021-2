@@ -1,7 +1,13 @@
 Jelenlegi helyzet leírása
 Manapság az online vásárlás egyre jobban hódít. Egyre több webáruház jön létre, aminek köszönhetően kényelmesebben lehet vársárolni, így az emberek otthonról, 
-sorban állás nélkül megtudják venni azt, amire szükségük van. Az interneten rengeteg webáruház található, ahol különböző dolgokat is árulnak. A mai világban az
-emberek, már a könyveket is nagy részben online vásárolják meg. Így a mi tervünk is ehhez kapcsolódik. Ugyanis egy könyves webáruházat szeretnénk létrehozni.
+sorban állás nélkül megtudják venni azt, amire szükségük van. Az interneten rengeteg webáruház található, ahol különböző dolgokat árulnak. A mai világban az
+emberek, már a könyveket is nagy részben online vásárolják meg. Minket is azzal bíztak meg, hogy egy webáruházat hozzunk létre, ahol könyveket árulnának. A 
+megbízonk üzletét teljes mértékben online akarja működtetni. Mivel ez az első webáruháza lenne, így csak az országon belül szeretné működtetni. Ezzel megszűne a 
+helyhez kötöttség és így az országban bárki, bármikor, bárhol széttud nézni a webshopban és megtudja rendelni azt a könyvet vagy könyveket, amiket szeretne 
+megvenni. Így a vársálóknak, nem kell személyesen bemenni az üzletben és sokáig keresgélni, majd sorban állni, hanem egész egyszerűen felmenni weboldalra és ott
+különböző értékek alapján megkeresni a kívánt könyvet vagy könyveket. A rendelést is egész egyszerűen, pár kattintással le tudja adni. Ehhez persze az illetőnek
+rendelkeznie kell felhasználói fiókkal. Valamint még a weboldal létrehozásával megszűnnek a felesleges utazgatások is. Ugyanis a váráslók a csomagjaikat házhoz 
+szállítva készhez kapják.
 
 Vágyálom rendszer leírása
 A cél egy könyves webáruház létrehozása, aminek létrehozásához a Node.js-et használjuk. Backend részen az express-t, az adatbázishoz pedig a mysql-t használjuk.
