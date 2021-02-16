@@ -27,6 +27,12 @@ ki listázni, illetve annak tartalmát módosítani. Tehát a törölni könyvek
 jelszavukat email címmel tudják módosítani. Valamint a felhazsnálók tudjanak értékeléseket leadni a könyvekről.
 
 A rendszerre vonatkozó pályázat, törvények, rendeletek, szabványok és ajánlások leírása
+A felhasználó által megadott személyes adatok bizalmasan lesznek kezelve, nem lesznek át adtva harmadik félnek. Ezekkel az adatokkat az adminisztrátorok és a 
+weblap készítői nem felhasználni saját céljaikra. A felhasználó által nyújtott bizalommal nem fognak vissza élni. Sohasem fog kapni a felhasználó olyan email-t, 
+amiben kérik őt arra, hogy a jelszavát adja meg. Az oldalon mindig az aktuális, friss információk lesznek megjelenítve. A felhaszáló megfelelően lesz tájékoztatva,
+azaz az oldalon az összes olyan információ fenn lesz, amelyre szüksége van. Mivel webáruházról van szó ezért hiteles temékek és árak lesznek fel tüntetve. 
+Rendelésnél fel lesz tünteve a vásárolt könyvek darab száma, valamint a rendelés végösszege.
+
 Jelenlegi üzleti folyamatok modellje
 Igényelt üzleti folyamatok modellje
 
