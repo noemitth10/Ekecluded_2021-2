@@ -78,3 +78,8 @@ Követelmény lista
 
 Irányított és szabad szöveges riportok szövege
 Fogalomszótár
+    - Node.js: Szoftverrendszer, melyet skálázható internetes alkalmazások, mégpedig webszerverek készítésére hoztak létre.
+    - Express: Back end keretrendszer a Node.js-hez, amely ingyenes és nyílt forráskódú szoftverként jelent meg az MIT licenc alatt.
+    - MySql: Egy többfelhasználós, többszálú, SQL-alapú relációs adatbázis-kezelő szerver.
+    - E-book: Az e-book (magyarul e-könyv) az elektronikus formában létrehozott és terjesztett szöveget és egyes esetekben képet tartalmazó fájl, amely digitális 
+    megfelelője a nyomtatott könyvnek.
