@@ -52,34 +52,34 @@ Ennél a webáruháznál nyomtatott könyvek mellet, e-book-kat is vehetnek a v�
 számára.
 
 Követelmény lista
-    Funkcionális követelmények:
-    - Regisztráció: regisztráció felület, ahol a felhasználó megtduja adni az adatit.
-    - Regisztrációt visszaigazoló email: a felhasználó kap egy igazoló emailt a regisztrációjáról.
-    - Bejelentkezés: bejelentkezési felület, ahol a felhasználó az email címe és a jelszava megadásával tud be lépni.
-    - Profi megjelenítése: az adott felhasználó adatainak ki listázása.
-    - Profil szerkesztése: a felhasználó tudja módosítani az adatit, jelszó módosítása, csak email címmel lehet.
-    - Főoldal: a főoldalon a könyvek ki legyenek listázva, valamint jelenjenek meg ott hírek, illetve az aktuális akciókról szóló információk.
-    - Keresési lehetőség: a felhasználó különböző értékek alapján tudja ki listázni a könyveket, mint pl.: cím, ár, író, kategória … stb.
-    - Kosárba helyezés: a felhasználó kosárba tudja rakni a megvenni kivánt könyvet vagy könyveket.
-    - Darab szám megadása: a felhasználó a könyv kosárba tétele előtt, lehetőséget kell biztosítani számára, arr, hogy a megadja azt, hogy hány darabot kíván venni
-    az adott könyvből.
-    - Kosár tartalmának megjelenítése: a felhasználó a rendelés le adása során meg tudja nézni a kosár tartalmát. Tehát annak ki listázása, valamint a végösszeg 
-    feltüntetése.
-    - Kosár tartalmának módosítása: a felhasználó tudjon könyveket törölni a megvenni kívánt könyvek listájáról.
-    - Értékelés: a felhasználók tudjanak értékelések leadni az adott könyvekről.
-
-    Nem funkcionális követelmények:
-    - A weboldalt interneten lhet elérni és akkor is megfelelően jelenik meg.
-    - Különböző eszközökön megfelelően jelenjen meg a weblap.
-    - A témára vonatkozó adatokat tartalmazza, azaz ne jelenjenek meg oda nem illő tartamak.
-    - A felhasználók könnyen eltudjanak benne igazodni.
-    - A felhasználók könnyedén kitudják keresni az őket érdeklő könyveket.
-    - A főoldalon minden friss információnak meg kell jelenie.
-    - A funkciók a leírtaknak megfelelően működjenek.
-    - A felhasználók tudják szerkeszteni a profiljuk adatait, tudjanak vásárolni, böngészni, kosár tartalmát ki listázni, valamint azt módosítani, megvenni kívánt 
-    könyvek számát megadni, illetve rendelést leadni. Viszont az összes olyan cselekvést, amit csak is az adminisztrátorok tehetnek meg azt ne tudják meg tenni. 
-    Pl.: új könyvet felvenni, vagy egy adott könyv adatait szerkeszteni.
-    - Az adminisztrátorok tudják kezelni a felhasználókat, illetve a könyveket.
+Modul           |ID     |Név                                |Verziószám |Kifejtés
+Regisztrálás    |K1     |Regisztráció                       |0.1 verzió |A felhasználó az adatai megadásával regisztrálhat a rendszerben. Meg kell neki adnia a
+                                                                        nevét, lakcímét, email címét, jelszavát, telefonszámát és a nemét.
+Regisztrálás    |K2     |Visszaigazoló email                |0.1 verzió |A felhasználónak kapnia kell egy visszaigazoló emailt a regisztrálása után.
+Bejelentkezés   |K3     |Belépés                            |0.1 verzió |A felhasználó az email címével és a jelszavával léphet majd be.
+Könyv           |K4     |Könyv adatai                       |0.1 verzió |A könyvek adatai jelenjenek meg a kíválasztott könyv mellett. Jelenjen meg a cím, ISBN szám,
+                                                                        szöveges leírás a könyvről, kép, ár, a könyv oldalainak a száma, az adott könyv nyelve, a
+                                                                        könyv típusa és a borító típusa.
+Felhasználó     |K5     |Profil megjelenítése               |0.2 verzió |A adott felhasználó adatainak kilistázása.
+Felhasználó     |K6     |Hűségpont                          |0.2 verzió |Minden felhasználónak legyen hűségpontja, melyet a vásárlások során gyarapíthat. Ez
+                                                                        kezdetben 0 legyen.
+Felhasználó     |K7     |Profil szerkesztése                |0.3 verzió |A felhasználó tudja módosítani az adatit.
+Felhasználó     |K8     |Jelszó módosítás                   |0.3 verzió |A felhasználó a jelszavát csak email címmel tudja módosítani.
+Könyv           |K9     |Keresés                            |0.4 verzió |A felhasználó különböző értékek alapján tudja ki listázni a könyveket, mint pl.: cím, ár,
+                                                                        író, kategória … stb.
+Rendelés        |K10    |Könyvek darabszámának megadása     |0.5 verzió |A felhasználó egy adott könyvből több példányt is rendelhet. Ekkor a darabszámot még a
+                                                                        kosárba helyezés előtt megtudja adni.
+Rendelés        |K11    |Kosárba helyezés                   |0.5 verzió |A felhasználó a kiválasztott könyvet vagy könyveket beletudja tenni a kosárba.
+Kosár           |K12    |Kosár tartalmának megjelenítése    |0.6 verzió |A felhasználó meg tudja nézni a kosár tartalmát. Tehát annak ki listázása, valamint a 
+                                                                        végösszeg feltüntetése.
+Kosár           |K13    |Kosár tartalmának módosítása       |0.6 verzió |A felhasználó tudjon könyveket törölni a megvenni kívánt könyvek listájáról.
+Rendelés        |K14    |Rendelés végelegsítése             |0.7 verzió |A rendelés leadás agomb megnyomásával a felhasználó végelegsíteni tudja a rendelését.
+Rendelés        |K15    |Visszaigazoló email a rendelésről  |0.7 verzió |A rendelés leadása után a felhasználó visszaigazoló emailt kap a rendeléséről, amiben
+                                                                        fellegyenek tűnteve a rendelés adatai, a végösszeggel együtt.
+Főoldal         |K16    |A főoldal tartalma                 |0.8 verzió |A főoldalon a könyvek ki legyenek listázva, valamint jelenjenek meg ott hírek, illetve az
+                                                                        aktuális akciókról szóló információk.
+Felhasználó     |K17    |Profil kép megadása                |0.9 verzió |A felhasználó a profiljához beállíthassa a profil képét, illetve azt módosíthassa.
+Felhasználó     |K18    |Értékelés                          |0.9 verzió |A felhasználó tudja értékelni a könyveket külön-külön, illetve az áruházat is.
 
 Használati esetek
 Képernyőtervek
