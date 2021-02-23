@@ -86,3 +86,10 @@ Képernyőtervek
 Forgatókönyvek
 Funkció - követelmény megfeleltetés
 Fogalomszótár
+- Node.js: Szoftverrendszer, melyet skálázható internetes alkalmazások, mégpedig webszerverek készítésére hoztak létre.
+- Express: Back end keretrendszer a Node.js-hez, amely ingyenes és nyílt forráskódú szoftverként jelent meg az MIT licenc alatt.
+- MySql: Egy többfelhasználós, többszálú, SQL-alapú relációs adatbázis-kezelő szerver.
+- E-book: Az e-book (magyarul e-könyv) az elektronikus formában létrehozott és terjesztett szöveget és egyes esetekben képet tartalmazó fájl, amely digitális 
+  megfelelője a nyomtatott könyvnek.
+- ISBN szám: Az ISBN vagy ISBN-szám (International Standard Book Number) 13 jegyű (a 2007. január 1. előtt kiadott könyveknél 10 jegyű) azonosítószám, a könyvek és egyéb monografikus jellegű művek
+  nyilvántartására szolgáló nemzetközi szabványos számrendszerhez tartozó kód.
