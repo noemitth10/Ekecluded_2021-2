@@ -43,8 +43,13 @@ Ennél a webáruháznál nyomtatott könyvek mellet, e-book-kat is vehetnek a v�
 számára.
 
 Igényelt üzleti folyamatok modellje
-A webáruház interneten keresztül lesz elérhető. A megrendelő igényeinek megfelelően fog elkészülni, a megadott határidőre. A felhasználókat csoportosítani fogaja
-adminisztrátorok és sima, egyzserű felhasználók, azaz vásárlók szerint. A témának megfelelően az áruk könyvek lesznek, amelyek lehetnek nyomtatottak és e-book-ok.
+A webáruháznak lesznek vásárlói, illetve adminisztrátorai. A követelmény listában feltüntetett funkciónális és nem funkcionális követeményeknek megfelelően fog
+majd elkészülni. Regisztrációs, illetve bejelentkezési felületek lesznek. Szerepkör szerint lesznek felosztva a felhasználók. Azaz lesznek adminiszrrátorok és sima
+egyszerű felhasználók, azaz vásárlók. Az adminisztrátorok kezelik a felhasználókat, illetve a könyveket. A vásárlók, pedig böngésznek a könyvek között, a könyveket
+ki listázhatják különböző értékek szerint. Vásárolhatnak, egy könyvbőll több példányt is. A kosár tartalmát megnézhetik, illetve módosíthatják azt. Valamint a saját
+adataikat is szerkeszthetik. Mivel folyamatosan új könyvek jelennek meg, ezért az áruházban vásárolható könyvek listája ennek megfelelően fog folyamatosan bővülni.
+Ennél a webáruháznál nyomtatott könyvek mellet, e-book-kat is vehetnek a vásárlók. A webáruház mindig naprakész, friss információkkal fog szolgálni a felhasználók
+számára.
 
 Követelmény lista
     Funkcionális követelmények:
