@@ -34,13 +34,16 @@ azaz az oldalon az összes olyan információ fenn lesz, amelyre szüksége van.
 Rendelésnél fel lesz tünteve a vásárolt könyvek darab száma, valamint a rendelés végösszege.
 
 Jelenlegi üzleti folyamatok modellje
-A webáruháznak lesznek vásárlói, illetve adminisztrátorai. A követelmény listában feltüntetett funkciónális és nem funkcionális követeményeknek megfelelően fog
-majd elkészülni. Regisztrációs, illetve bejelentkezési felületek lesznek. Szerepkör szerint lesznek felosztva a felhasználók. Azaz lesznek adminiszrrátorok és sima
-egyszerű felhasználók, azaz vásárlók. Az adminisztrátorok kezelik a felhasználókat, illetve a könyveket. A vásárlók, pedig böngésznek a könyvek között, a könyveket
-ki listázhatják különböző értékek szerint. Vásárolhatnak, egy könyvbőll több példányt is. A kosár tartalmát megnézhetik, illetve módosíthatják azt. Valamint a saját
-adataikat is szerkeszthetik. Mivel folyamatosan új könyvek jelennek meg, ezért az áruházban vásárolható könyvek listája ennek megfelelően fog folyamatosan bővülni.
-Ennél a webáruháznál nyomtatott könyvek mellet, e-book-kat is vehetnek a vásárlók. A webáruház mindig naprakész, friss információkkal fog szolgálni a felhasználók
-számára.
+A megrendelő igényei és követelményei alapján a cél egy online könyv áruház létrehozása, amelynek az elkészítéséhez a Node.js fogjuk használni. A backend részen az 
+express-t, míg frontend részen a react-ot használjuk majd. A szükséges adatok eléréséhez, egy mysql adatbázis tábláit vesszük igényben. Külön lesznek tárolva a 
+könyvek, írók, felhasználók, rendelések, szerepkörök, ami azt fogja feltüntetni, hogy egy felhasználó sima egyszerá felhasználó, azaz csak vásárló vagy esetleg 
+adminisztrátor. Mindezeken kívül külön lesznek még tárolva a kategóriák is, ami a könyveket fogja különböző kategóriákban besorolni. Tulajdonképpen egy szerepkörhöz 
+több felhasználó is tartozhat majd, valamint egy kategóriához több könyv is tartozhat. Mivel vannak sima egyszerű felhasználók, azaz vásárlók és vannak adminisztrátorok,
+ezért nekik különböző jogaik lesznek. Ugyanis a vásárlók összeségében az oldalon váaárolhatnak, illetve böngészhetnek a könyvek között. Míg az adminisztrátorok kezelik
+a vásárlókat és a könyveket. Azaz az adminisztrátorok vehetnek fel újabb vásárlókat a regisztráció során megadott adatok alapján, illetve törölhetnek a rendszerből 
+felhasználókat, ha az adott felhazsnáló azt kívánja. Könyveknél a meglévő adatokat szerkesztehetik, illteve újabb könyveket vihetnek fel a rendszerben, valamint meglévő
+könyveket is törölhatnek a rendszerből. Újabb író esetén fel kell venniük az adot írót a rendszerbe. Mindeezeken kívül még a feladatuk az, hogy a főoldalon megjelenő 
+információkat, híreket szerkesszék.
 
 Igényelt üzleti folyamatok modellje
 A webáruháznak lesznek vásárlói, illetve adminisztrátorai. A követelmény listában feltüntetett funkciónális és nem funkcionális követeményeknek megfelelően fog
