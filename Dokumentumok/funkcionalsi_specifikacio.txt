@@ -85,6 +85,34 @@ Felhasználó     |K17    |Profil kép megadása                |0.9 verzió |A 
 Felhasználó     |K18    |Értékelés                          |0.9 verzió |A felhasználó tudja értékelni a könyveket külön-külön, illetve az áruházat is.
 
 Használati esetek
+
+A rendszer felhasználói a következők:
+
+-Vendég ( nem bejelentkezett felhasználó )
+-Vásárló
+-Adminisztrátor
+
+A rendszernek a következő funkciókat kell ellátnia:
+
+-az adminisztrátorok tudjanak könyveket felvenni,törölni illetve módosítani
+-az adminisztrátorok tudjanak felhasználó adatokat módosítani
+-az adminisztrátorok tudjanak felhasználókat és könyveket kilistázni
+-a vásárálók tudjanak a navigációs menüvel az oldalon belül navigálni
+-a vásárálók tudjanak a Katalóguson belül keresni
+-a vásárálók tudjanak a Katalóguson belül könyveket várásolni
+-a vásárálók tudjanak személyes adatokat változtatni ( e-mail, telefonszám )
+-a vendégek tudjanak a navigációs menüvel az oldalon belül navigálni
+-a vendégek tudjanak a Katalóguson belül keresni
+
+Előfeltételek:
+
+-adminisztrátorok részére a rendszer használatához jogosultság, azaz kelszó szükséges
+-a vásárlóknak a vásárláshoz regisztráció szükséges
+
+Ábra:
+
+
+
 Képernyőtervek
 
 Forgatókönyvek
