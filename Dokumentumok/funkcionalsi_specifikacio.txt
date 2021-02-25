@@ -86,8 +86,33 @@ Felhasználó     |K18    |Értékelés                          |0.9 verzió |A
 
 Használati esetek
 Képernyőtervek
+
 Forgatókönyvek
+A kezdőlap oldal jelenik meg minden felhasználó számára legelőször, tartalmazza a Webshopra vonatkozó legfontosabb információkat. A navigációs sáv a Kezdőlap, Tájékoztató, Katalógus és Belépés/Regisztráció menüpontokat tartalmazza,
+ezek a rendszerbe való belépés előtt minden esetben megjelennek, a felhasználó bármelyik megjelenített oldalon kezdeményezheti az alábbi műveleteket vagy oldalak megjelenítését.
+
+- A tájékoztató oldal a kölcsönzőkre vonatkozó általános, és az adatkezelési szabályokkal kapcsolatos tájékoztatást tartalmaz.
+- A katalógus menüpont kiválasztása esetén lehetőség van belépés nélküli kersésre. A felhasználó a keresés esetén kulcsszavak alapján képes keresni. A keresés után vagy egy találati lista vagy egy "Nincs a keresésnek megfelelő könyv."
+  üzenet az eredmény.
+- A Belépés/Regisztrációt választva vásárló illetve adminisztrátorként lehet belépni a rendszerbe. Hibás felhasználó név vagy jelszó megadása esetén újból meg kell adni az adatokat.
+
+Amennyiben a felhasználó adminisztrátori jogosultsággal rendelkezik, a következő műveleteket hajthatja végre:
+- A bejelnkezett felhasználók kilistázása, amelyett a navigációs sávon megjelent, csak az adminisztrátori jogosultsággal rendelkező felhasználók láthatnak illetve használhatnak.
+  Ezzel a menüponttal kilistázhatják a jelenleg bejelentkezett felhasználókat.
+- A bejelnkezett felhasznáók menüpontban az adatok módosítása pontot választva a felhasználók minden személyes adatának megváltoztatása lehetséges.
+- A katalógusba új könyvek felvételére lehetősége van, az új könyv hozzáadása gomb használatával, illetve könyveket el is távolíthat a katalógusból a könyv törlése gombra kattintva. Ezeket az opciókat csak az adminisztrátori
+  jogosultsággal rendelkező felhasználók láthatnak
+- A katalógusban lévő könyvek adatait illetve leírásainak módosítására is lehetőségük van az adminisztrátori jogosultsággal rendelkező felhasználóknak.
+
+Vásárló ként történő belépés esetén a felhasználó navigációs sávjában a Kezdőlap, Katalógus, Tájékozató valamint a felhasználó név látható. Lehetőség van a kezdőlapra visszatérni, továbbá a katalógusra történő navigáció után keresésre van lehetőség,
+egy adott könyvet kiválasztva látható a könyv adatai illetve leírása is, lehetősége van a köny megvásárlására. A navigációs sáv jobb oldalán megjelenő felhasználó névre ( pl. Belépve: xy ) kattintva lehetőség adódik a személyes adatok
+megváltoztatására ( telefonszám, e-mail cím ) illetve a kijelentkezésre.
+
+Bejelentkezés nélkül a felhasználó navigációs sávjában a Kezdőlap, Katalógus, Tájékozató található. Lehetőség van a kezdőlapra visszatérni, továbbá a katalógusra történő navigáció után keresésre van lehetőség,
+egy adott könyvet kiválasztva látható a könyv adatai illetve leírása is, de vásárlása nincs lehetősége.
+
 Funkció - követelmény megfeleltetés
+
 Fogalomszótár
 - Node.js: Szoftverrendszer, melyet skálázható internetes alkalmazások, mégpedig webszerverek készítésére hoztak létre.
 - Express: Back end keretrendszer a Node.js-hez, amely ingyenes és nyílt forráskódú szoftverként jelent meg az MIT licenc alatt.
