@@ -114,14 +114,13 @@ A kezdőlap oldal jelenik meg minden felhasználó számára legelőször, tarta
 ezek a rendszerbe való belépés előtt minden esetben megjelennek, a felhasználó bármelyik megjelenített oldalon kezdeményezheti az alábbi műveleteket vagy oldalak megjelenítését.
 
 - A tájékoztató oldal a kölcsönzőkre vonatkozó általános, és az adatkezelési szabályokkal kapcsolatos tájékoztatást tartalmaz.
-- A katalógus menüpont kiválasztása esetén lehetőség van belépés nélküli kersésre. A felhasználó a keresés esetén kulcsszavak alapján képes keresni. A keresés után vagy egy találati lista vagy egy "Nincs a keresésnek megfelelő könyv."
+- A katalógus menüpont kiválasztása esetén lehetőség van belépés nélküli kersésre. A felhasználó a keresés esetén kulcsszavak illetve a köny bármilyen adatja alapján képes keresni. A keresés után vagy egy találati lista vagy egy "Nincs a keresésnek megfelelő könyv."
   üzenet az eredmény.
 - A Belépés/Regisztrációt választva vásárló illetve adminisztrátorként lehet belépni a rendszerbe. Hibás felhasználó név vagy jelszó megadása esetén újból meg kell adni az adatokat.
 
 Amennyiben a felhasználó adminisztrátori jogosultsággal rendelkezik, a következő műveleteket hajthatja végre:
 - A bejelnkezett felhasználók kilistázása, amelyett a navigációs sávon megjelent, csak az adminisztrátori jogosultsággal rendelkező felhasználók láthatnak illetve használhatnak.
   Ezzel a menüponttal kilistázhatják a jelenleg bejelentkezett felhasználókat.
-- A bejelnkezett felhasznáók menüpontban az adatok módosítása pontot választva a felhasználók minden személyes adatának megváltoztatása lehetséges.
 - A katalógusba új könyvek felvételére lehetősége van, az új könyv hozzáadása gomb használatával, illetve könyveket el is távolíthat a katalógusból a könyv törlése gombra kattintva. Ezeket az opciókat csak az adminisztrátori
   jogosultsággal rendelkező felhasználók láthatnak
 - A katalógusban lévő könyvek adatait illetve leírásainak módosítására is lehetőségük van az adminisztrátori jogosultsággal rendelkező felhasználóknak.
