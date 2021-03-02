@@ -1,3 +1,11 @@
+Bevezető
+A webalkalmazás célja, hogy felhasználói több kiadó által publikált könyvek hatalmas 
+választékából megtalálhasssa a számára legérdekesebbet és könyedén megrendelhesse 
+azt akár nagy példányszámban is. Weboldalunk igyekszik minnél bővebb és mélyrehatóbb 
+információt szolgáltatni az elérhető könyvekről és azok íróiról, hogy ezáltal is
+könnyebb legyen a választás. Ezen felül felhasználóknak lehetőségük lesz regisztrálni, 
+szállítási adataik mentésére ezzel is gyorsítani jövőbeli reneléseki folyamatát.
+
 Jelenlegi helyzet leírása
 Manapság az online vásárlás egyre jobban hódít. Egyre több webáruház jön létre, aminek köszönhetően kényelmesebben lehet vársárolni, így az emberek otthonról, 
 sorban állás nélkül megtudják venni azt, amire szükségük van. Az interneten rengeteg webáruház található, ahol különböző dolgokat is árulnak. A mai világban az
