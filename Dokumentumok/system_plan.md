@@ -1,22 +1,23 @@
-#Bevezető
-#A rendszer célja
-#Projekt terv
-#Üzleti folyamatok modellje
-#Követelmények
+# Bevezető
+# A rendszer célja
+# Projekt terv
+# Üzleti folyamatok modellje
+# Követelmények
 
-#Funkcionális terv
+# Funkcionális terv
 
-##Rendszerszereplők
+## Rendszerszereplők
 	A rendszerünkben három rendszerszerszereplő csoportot különbözetünk meg, Az egyik a regisztrációval rendelkező vásárlók csoportja. A másik a regisztrációval nem rendelkező vendég felhasználók csoportja. A harmadik pedig az adminisztrátorok csoportja. A regisztrációval rendelkező vásárlók igénybe vehetik a webshop által nyújtott összes szolgáltatást, míg a regisztrációval nem rendelkező vendégek csak a webshop korlátozott részéhez férnek hozzá. Az adminisztrátorok szintén használhatják azokat a szolgáltatásokat amit a regisztrációval rendelkező vásárlók, viszont az adminisztrátorok több jogosultsággal rendelkeznek, mint az előbb említett felhasználók csoportja. Az adminisztrátorok hozzá férhetnek a felhasználók listájához, lehetőségük van rendszerüzenetet küldeni a felhasználók részére hiba esetén.
 
-##Rendszerhasználati esetek
-	###A rendszer felhasználói a következők:
+## Rendszerhasználati esetek
+
+	### A rendszer felhasználói a következők:
 
 	-Vendég ( nem bejelentkezett felhasználó )
 	-Vásárló
 	-Adminisztrátor
 
-	###A rendszernek a következő funkciókat kell ellátnia:
+	### A rendszernek a következő funkciókat kell ellátnia:
 
 	-az adminisztrátorok tudjanak könyveket felvenni,törölni illetve módosítani
 	-az adminisztrátorok tudjanak felhasználó adatokat módosítani
@@ -28,14 +29,14 @@
 	-a vendégek tudjanak a navigációs menüvel az oldalon belül navigálni
 	-a vendégek tudjanak a Katalóguson belül keresni
 
-	###Előfeltételek:
+	### Előfeltételek:
 
 	-adminisztrátorok részére a rendszer használatához jogosultság, azaz kelszó szükséges
 	-a vásárlóknak a vásárláshoz regisztráció szükséges
 
-	###Ábra: 
+	### Ábra: 
 
-##Menühierarchiák
+## Menühierarchiák
 	A menürendszer, egy a weboldal fejléce alatt található vizszintes, lenyíló füleket is tartalmazó navigációs sávban építettünk fel.
 
 	A rendszerbe való bejelentkezés előtt Kezdőlap, Tájékoztató, Katalógus, valamint Belépés menüpontok találhatók a navigációs sávban. Ezek közül egyedül a katalógus tartalmaz lenyíló menüt, lehetővé téve az egyszerű keresés valamint a részletes keresés műveletek kezdeményezését a könyves bolt katalógusban a webshop látogatói számára.
@@ -50,8 +51,8 @@
 	A Vásárlók menüpont tartalmazza a regisztrált vásárlók listáját, ahol az adminisztrátorok bizonyos információkat kérhetnek le a felhasználóról példáúl a regisztráció dátumát vagy az utolsó belépés időpontját.
 	A Katalógus lenyiló menü tartalmazza a katalógusban való kereséshez és a könyvek katalogizálásához szükséges műveletek menüpontjait, melyek név szerint: Egyzerű keresés, Részletes keresés, Új könyv felvétele, Könyv módosítása, Könyv törlése. A menü két főbb tevékenység köré szerveződik, a keresés, könyvek katalógusba való felvétele, módosítása vagy törlése.
 	
-#Fizikai környezet
+# Fizikai környezet
 
-#Adatbázis terv
+# Adatbázis terv
 
-#Tesztterv
+# Tesztterv
