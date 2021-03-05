@@ -7,32 +7,33 @@
 # Funkcionális terv
 
 ## Rendszerszereplők
-	A rendszerünkben három rendszerszerszereplő csoportot különbözetünk meg, Az egyik a regisztrációval rendelkező vásárlók csoportja. A másik a regisztrációval nem rendelkező vendég felhasználók csoportja. A harmadik pedig az adminisztrátorok csoportja. A regisztrációval rendelkező vásárlók igénybe vehetik a webshop által nyújtott összes szolgáltatást, míg a regisztrációval nem rendelkező vendégek csak a webshop korlátozott részéhez férnek hozzá. Az adminisztrátorok szintén használhatják azokat a szolgáltatásokat amit a regisztrációval rendelkező vásárlók, viszont az adminisztrátorok több jogosultsággal rendelkeznek, mint az előbb említett felhasználók csoportja. Az adminisztrátorok hozzá férhetnek a felhasználók listájához, lehetőségük van rendszerüzenetet küldeni a felhasználók részére hiba esetén.
+
+A rendszerünkben három rendszerszerszereplő csoportot különbözetünk meg, Az egyik a regisztrációval rendelkező vásárlók csoportja. A másik a regisztrációval nem rendelkező vendég felhasználók csoportja. A harmadik pedig az adminisztrátorok csoportja. A regisztrációval rendelkező vásárlók igénybe vehetik a webshop által nyújtott összes szolgáltatást, míg a regisztrációval nem rendelkező vendégek csak a webshop korlátozott részéhez férnek hozzá. Az adminisztrátorok szintén használhatják azokat a szolgáltatásokat amit a regisztrációval rendelkező vásárlók, viszont az adminisztrátorok több jogosultsággal rendelkeznek, mint az előbb említett felhasználók csoportja. Az adminisztrátorok hozzá férhetnek a felhasználók listájához, lehetőségük van rendszerüzenetet küldeni a felhasználók részére hiba esetén.
 
 ## Rendszerhasználati esetek
 
 ### A rendszer felhasználói a következők:
 
--Vendég ( nem bejelentkezett felhasználó )
--Vásárló
--Adminisztrátor
+- Vendég ( nem bejelentkezett felhasználó )
+- Vásárló
+- Adminisztrátor
 
 ### A rendszernek a következő funkciókat kell ellátnia:
 
--az adminisztrátorok tudjanak könyveket felvenni,törölni illetve módosítani
--az adminisztrátorok tudjanak felhasználó adatokat módosítani
--az adminisztrátorok tudjanak felhasználókat és könyveket kilistázni
--a vásárálók tudjanak a navigációs menüvel az oldalon belül navigálni
--a vásárálók tudjanak a Katalóguson belül keresni
--a vásárálók tudjanak a Katalóguson belül könyveket várásolni
--a vásárálók tudjanak személyes adatokat változtatni ( e-mail, telefonszám )
--a vendégek tudjanak a navigációs menüvel az oldalon belül navigálni
--a vendégek tudjanak a Katalóguson belül keresni
+- az adminisztrátorok tudjanak könyveket felvenni,törölni illetve módosítani
+- az adminisztrátorok tudjanak felhasználó adatokat módosítani
+- az adminisztrátorok tudjanak felhasználókat és könyveket kilistázni
+- a vásárálók tudjanak a navigációs menüvel az oldalon belül navigálni
+- a vásárálók tudjanak a Katalóguson belül keresni
+- a vásárálók tudjanak a Katalóguson belül könyveket várásolni
+- a vásárálók tudjanak személyes adatokat változtatni ( e-mail, telefonszám )
+- a vendégek tudjanak a navigációs menüvel az oldalon belül navigálni
+- a vendégek tudjanak a Katalóguson belül keresni
 
 ### Előfeltételek:
 
--adminisztrátorok részére a rendszer használatához jogosultság, azaz kelszó szükséges
--a vásárlóknak a vásárláshoz regisztráció szükséges
+- adminisztrátorok részére a rendszer használatához jogosultság, azaz kelszó szükséges
+- a vásárlóknak a vásárláshoz regisztráció szükséges
 
 ### Ábra: 
 
