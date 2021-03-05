@@ -1,6 +1,6 @@
 CREATE DATABASE bookshop;
 CREATE TABLE users (
-    user_id AUTO_INCREMENT PRIMARY KEY,
+    user_id SERIAL PRIMARY KEY,
     role_id INT,
     name VARCHAR(255),
     user_name VARCHAR(255),
@@ -15,6 +15,91 @@ CREATE TABLE users (
 );
 
 CREATE TABLE roles (
-    role_id AUTO_INCREMENT PRIMARY KEY,
+    role_id SERIAL PRIMARY KEY,
     role_name VARCHAR(255)
+);
+
+CREATE TABLE orders (
+    order_id SERIAL PRIMARY KEY,
+    user_id INT,
+    postcode INT,
+    city VARCHAR(255),
+    street VARCHAR(255),
+    house_number INT,
+    total_amount DECIMAL,
+    comment VARCHAR(255),
+    
+    CONSTRAINT fk_user_id FOREIGN KEY(user_id)
+    REFERENCES users(user_id) ON DELETE CASCADE
+);
+
+CREATE TABLE books_of_order (
+    id SERIAL PRIMARY KEY,
+    book_id INT,
+    order_id INT,
+    
+    CONSTRAINT fk_order_id FOREIGN KEY(order_id)
+    REFERENCES orders(order_id) ON DELETE CASCADE,
+    CONSTRAINT fk_book_id FOREIGN KEY(book_id)
+    REFERENCES books(book_id) ON DELETE CASCADE
+);
+
+CREATE TABLE books (
+    book_id SERIAL PRIMARY KEY,
+    publisher_id INT,
+    title VARCHAR(255),
+    description VARCHAR(255),
+    image VARCHAR(255),
+    pages INT,
+    language VARCHAR(255),
+    type VARCHAR(255),
+    cost DECIMAL,
+    
+    CONSTRAINT fk_book_category_id FOREIGN KEY(book_id)
+    REFERENCES book_category(book_id) ON DELETE CASCADE,
+    CONSTRAINT fk_publisher_id FOREIGN KEY(publisher_id)
+    REFERENCES publishers(publisher_id) ON DELETE CASCADE,
+    CONSTRAINT fk_book_writer_id FOREIGN KEY(book_id)
+    REFERENCES book_writer(book_id) ON DELETE CASCADE
+);
+
+CREATE TABLE books_category (
+    id SERIAL PRIMARY KEY,
+    book_id INT,
+    category_id INT,
+    
+    CONSTRAINT fk_category_id FOREIGN KEY(category_id)
+    REFERENCES categories(category_id) ON DELETE CASCADE
+);
+
+CREATE TABLE categories (
+    category_id SERIAL PRIMARY KEY,
+    category_name VARCHAR(255)  
+);
+
+CREATE TABLE writers (
+    writer_id SERIAL PRIMARY KEY,
+    name VARCHAR(255),
+    date_of_birth DATE,
+    country VARCHAR(255),
+    image VARCHAR(255),
+    description VARCHAR(255)
+);
+
+CREATE TABLE book_writers (
+    id SERIAL PRIMARY KEY,
+    book_id INT,
+    writer_id INT,
+
+    CONSTRAINT fk_book_id FOREIGN KEY(book_id)
+    REFERENCES books(book_id) ON DELETE CASCADE,
+    CONSTRAINT fk_writer_id FOREIGN KEY(writer_id)
+    REFERENCES writers(writer_id) ON DELETE CASCADE  
+);
+
+CREATE TABLE publishers (
+    publisher_id SERIAL PRIMARY KEY,
+    headquarters VARCHAR(255),
+    name VARCHAR(255),
+    phone_number INT
 );
