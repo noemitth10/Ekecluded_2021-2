@@ -57,3 +57,19 @@ A Katalógus lenyiló menü tartalmazza a katalógusban való kereséshez és a 
 # Adatbázis terv
 
 # Tesztterv
+A rendszerterv szerint implementált szoftver tesztelésének célja, hogy ellenőrizze az üzleti folyamaok modellje című pontban meghatározott helyes, specifikáció szerinti lefutását, valamint hogy a kliens webes felület felhasználóbarát módon jelenik meg, és használható különböző hardver és szoftverkörnyezetben.
+
+A tesztelés során használt kiszolgáló hardver koonfigurációja a telepítés során használt hardverrel kompatibilis, teljesítményben (processzor, operatív memória, háttértár) nem tér el jelentősen. A telepítéshez természtesen az általunk alánlott konfiguráció kerül beszerzésre a felhasználó bolt által.
+
+A tesztelés során a használt hardverek a napjainkban elterjedt hardverkonfigurációjú PC-k illetve laptopok, melyeken a leggyakrabban használt böngészőkön (Google Chrome, Mozzila Firefox, Microsoft Edge) teszteljük a rendszert az alábbiakban részletezettek szerint. 
+
+**A minimum hardverkonfiguráció:**
+
+- Intel Celeron processzor
+- 4GB RAM
+- 128GB HDD
+- a képrenyők felbontása: 1280x1024 vagy 1920x1080
+
+A tesztelés során az üzleti folyamatokhoz tartozó különböző forgatókönyvek eredményét vizsgáljuk. Amennyiben az elvártnak megfelelő eredményt kapjuk, a teszteset sikeresnek tekinthető, ellentkező esetben a hibát rögzítjük a tesztjegyzőkönyvben. Ezt követően a feljegyzett hibákat javítjuk a szoftverben, és újnóli tesztelésnek vetjük alá a rendszert.
+
+A rendszer alábbiakban leírt tesztelésnek előfeltétele, hogy az adatbázisban phpMyAdmin segítségével felvegyünk egy első adminisztrátori jogosultsággal rendelkező felhasználót a felhasználók táblába. Felhasználónév: admin, a további adatok a fejlesztő-tesztelő személyes adatai lesznek. Ezzel belépve tudjuk tesztelni az adminisztrátori jogosultsággal rendelkező felhasználók kivételes funkciójait.
