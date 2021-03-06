@@ -35,7 +35,9 @@ A rendszerünkben három rendszerszerszereplő csoportot különbözetünk meg, 
 - adminisztrátorok részére a rendszer használatához jogosultság, azaz kelszó szükséges
 - a vásárlóknak a vásárláshoz regisztráció szükséges
 
-### Ábra: 
+### Ábra:
+
+![Image of usecase](https://raw.githubusercontent.com/noemitth10/Ekecluded_2021-2/main/Dokumentumok/%C3%81br%C3%A1k/USE_CASE_UML.png)
 
 ## Menühierarchiák
 A menürendszer, egy a weboldal fejléce alatt található vizszintes, lenyíló füleket is tartalmazó navigációs sávban építettünk fel.
