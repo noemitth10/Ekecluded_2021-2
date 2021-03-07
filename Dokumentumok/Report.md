@@ -20,4 +20,4 @@
 
 Ekecluded: Ehhez regisztrációs oldal kell és tárolnunk kell a felhasználók adatait. Tudna még pár szót mondani elképzeléseikről?
 
-Ügyfél: Szeretnénk ha regisztrációtól függetlenül is lehetne rendelni az oldalról, de ezen felül lehessen regisztrálni ezáltal is jövőben leegyszerűsíteni a rendelések folyamatát azzal hogy tárolhassák szállításki adataikat.
+Ügyfél: Szeretnénk ha regisztrációtól függetlenül is lehetne rendelni az oldalról, de ezen felül lehessen regisztrálni ezáltal is jövőben leegyszerűsíteni a rendelések folyamatát azzal hogy tárolhassák szállításki adataikat. Szeretnénk mindazonáltal ha a felhasználóknak lehetőségük nyílna profiljuk adatainak módosítására illetve profilkép megadására is. Szeretnénk még ha a felhasználók tudnák értékelni is a könyveket de csak ha be vannak jelentkezve illetve tetszésük szerint akár több darabot is rendelni egy példányból. Illetve főoldalunkon friss hírek mellet az elérhető választékból legyen pár felsorolva.
