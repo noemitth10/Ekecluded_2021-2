@@ -90,7 +90,11 @@ Vásárló ként történő belépés esetén a felhasználó navigációs sávj
 Bejelentkezés nélkül a felhasználó navigációs sávjában a Kezdőlap, Katalógus, Tájékozató található. Lehetőség van a kezdőlapra visszatérni, továbbá a katalógusra történő navigáció után keresésre van lehetőség, egy adott könyvet kiválasztva látható a könyv adatai illetve leírása is, de vásárlása nincs lehetősége.
 
 # Funkció - követelmény megfeleltetés
-
+K1, K2, K3: A weboldalon a felhasználók a regisztráció/bejelentkezés gombra kattintva név, lakcím, email, jelszó, telefonszám illetve nemük megadását követve regisztrálhatnak, mely esemény után visszaigazoló emailt kapnak a sikeres regisztrációról. Regisztrációt követően email cím és jelszó megadásával jelentkezhetnek be az oldalon.
+K4, K9, K18: A listázott könyvekből egyet kiválasztva a következő adatok jelennek meg a borítóképe mellett cím, ár, oldalak száma, ISBN száma, nyelve illetve típusa és egy rövid leírás a könyvről. Ugyan itt a felhasználó értékelheti a könyvet. A könyveket különböző módon lesz lehetőség listázni pl.: cím, ár, író, kategória.
+K5, K7, K8, K17: Saját profiljára kattintva megjelennek majd a felhasználó adatai és profilképe lehetőséget kap azok módosítására illetve a kép cseréjére/megadására. Jelszavát csak emailen keresztül tudja majd változtatni a felhasználó.
+K6, K10, K11, K12, K13: A felhasználóknak lehetőségük lesz egszerre több könyv rendelésére is ezt olya módon biztosítva, hogy kosarukhoz egyszerre több példányt is hozzá adhatnak, illetve a kosár ikonjára kattintanak listázza a már abban lévő tételeket és a végösszeget illetve lehetőségük nyílik azok esetleges törlésére.
+K14, K15: A rendelést a rendelés leadása gombal tudják majd véglegesíteni, ekkor egy visszaigazoló emailt kapnak a rendelésükről, melyben feltüntetésre kerülnek a rendelés adatai illetve a végösszeg.
 # Fogalomszótár
 
 - **Node.js:** Szoftverrendszer, melyet skálázható internetes alkalmazások, mégpedig webszerverek készítésére hoztak létre.
