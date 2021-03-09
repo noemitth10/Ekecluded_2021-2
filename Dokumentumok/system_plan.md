@@ -1,4 +1,5 @@
 # Bevezető
+A webalkalmazás célja, hogy felhasználói több kiadó által publikált könyvek hatalmas választékából megtalálhasssa a számára legérdekesebbet és könyedén megrendelhesse azt akár nagy példányszámban is. Weboldalunk igyekszik minnél bővebb és mélyrehatóbb információt szolgáltatni az elérhető könyvekről és azok íróiról, hogy ezáltal is könnyebb legyen a választás. Ezen felül felhasználóknak lehetőségük lesz regisztrálni, szállítási adataik mentésére ezzel is gyorsítani jövőbeli reneléseki folyamatát.
 # A rendszer célja
 # Projekt terv
 
