@@ -1,6 +1,25 @@
 # Bevezető
 # A rendszer célja
 # Projekt terv
+
+A projekt nem más, mint egy könyves webáruház létrehozása. Ennek elkészítésére összesen 14 hét áll rendelkezésre. A projekt elkészítéséhez NodeJS-t használunk, backend részen express-t, frontend részen pedig react-ot. Adatbázishoz pedig mysql-t használunk. A projekt elkészítésére rendelkezésre áll egy csapat, amely 3 főből áll, plusz még két projekt vezetőből. A csapat feladata a webáruház időben való elkészítése és annak egy megadott időpontban történő bemutatása. A csapatból mindenki felelősséggel tartozik azért, hogy a webáruház időben elkészüljön és hogy az általuk elválalt feladatok, melyek az oldal, a webáruház működését biztosítják jól, megfelelően működjenek. A projekt menedzserek le ellenőrzik a tagok által elkészített feladatokat, hogy azok tényleg ellátják-e a funkcióikat, ha nem, akkor annak a csapatagnak a figyelmét, hogy nem az elvárt módon működik az adott feladat. Ezen kívül még tanáccsal látják el a tagokat, valamint újabb feladatokat adnak ki.
+
+Mérföldkővek:
+- Követelmény specifikáció elkészítése
+- Funkcionális specifikáció elkészítése
+- UML ábrák elkészítése
+- Rendszerterv elkészítése
+- Felhasználók létrehozása
+- Felhasználói adatok megjelenítése
+- Felhasználó adatok szerkesztése
+- Könyvek adatainak megjelenítése
+- Könyv keresési lehetőség megadása (pl.: cím, ár, író, kategória … stb.)
+- Rendelési lehetőség biztosítása (könyvek darab számának megadása, kosárba helyezés, rendelés leadása)
+- Kosár tartalmának ki listázása
+- Kosár tartalmának szerkesztése
+- Főoldal tartalmának elkészítése (könyvek ki listázása, hírek, cikkek megjelenítése)
+- Tesztelés
+
 # Üzleti folyamatok modellje
 # Követelmények
 
