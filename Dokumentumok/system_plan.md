@@ -21,6 +21,9 @@ Mérföldkővek:
 - Tesztelés
 
 # Üzleti folyamatok modellje
+
+A projekt egy könyves webáruház, ami a megrendelő igényeinek megfelelően fog el készülni. A webáruház létrehozásánál a NodeJS-t használjuk. Backend részen az express-t, frontend-en pedig a react-ot. Adatbázisnál a mysql-t használjuk. A web áruháznak rendelkeznie kell egy regisztrációs és egy bejelentkezési felülettettel. Itt a  felhasználók adataik megadásával tudnak regisztrálni, ezt követően kapnak egy visszaigazoló email-t a regisztrációról. Mindezek után tudnak csak bejelentkezni. A felhasználók két csoportba tartozhatnak, az egyik az adminisztrátorok csoportja. Az adminisztrátorok kezelik a felhasználókat és könyveket. Újabb felhasználókat vesznek fel vagy esetleg törölnek felhasználókat. Könyveknél pedig újakat vesznek fel, meglévő könyveknél az adatokat módosítják, illetve törölnek könyveket. Mindezeken kívül még az ők feladatuk az, hogy a főoldalon a könyvek ki legyenek listázva, illetve az, hogy feltüntessék a legfrissebb akciókat és híreket. A felhasználók másik csoportja, az egyszerű felhasználók, azaz vásárlók. Ők tudnak böngészni a könyvek között például cím, ár, kategória … stb alapján. Illetve rendeléseket tudjanak leadni, a kosár tartalmát tudják módosítani és a saját adataikat megtudják nézni, illetve azokat módosítani. Mindezek alapján a cél egy olyan webáruház létrehozása, amelyet bárhol, bármikor bárki eltud érni. Ehhez tulajdonképpen internet kapcsolat szükséges és mivel manapság egyre több eszközön lehet nettezni, ezért fontos az is, hogy minden eszközön megfelelően jelenjen meg és jól működjön.
+
 # Követelmények
 
 # Funkcionális terv
