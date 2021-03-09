@@ -90,12 +90,12 @@ A tesztelés során használt kiszolgáló hardver koonfigurációja a telepít�
 
 A tesztelés során a használt hardverek a napjainkban elterjedt hardverkonfigurációjú PC-k illetve laptopok, melyeken a leggyakrabban használt böngészőkön (Google Chrome, Mozzila Firefox, Microsoft Edge) teszteljük a rendszert az alábbiakban részletezettek szerint. 
 
-**A minimum hardverkonfiguráció:**
+**A teszthez használt hardverkonfiguráció:**
 
-- Intel Celeron processzor
-- 4GB RAM
-- 128GB HDD
-- a képrenyők felbontása: 1280x1024 vagy 1920x1080
+- Intel i7 7700hq
+- 8GB RAM
+- 1000GB HDD
+- a képrenyők felbontása: 1920x1080
 
 A tesztelés során az üzleti folyamatokhoz tartozó különböző forgatókönyvek eredményét vizsgáljuk. Amennyiben az elvártnak megfelelő eredményt kapjuk, a teszteset sikeresnek tekinthető, ellentkező esetben a hibát rögzítjük a tesztjegyzőkönyvben. Ezt követően a feljegyzett hibákat javítjuk a szoftverben, és újnóli tesztelésnek vetjük alá a rendszert.
 
