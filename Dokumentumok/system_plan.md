@@ -27,6 +27,13 @@ A projekt egy könyves webáruház, ami a megrendelő igényeinek megfelelően f
 
 # Követelmények
 
+## Funkcionális követelmények
+
+A felhasználóknak a regisztráció gombra kattintva lehetőségük lesz saját adataik megadásával regisztrálni oldalunkra mely tevékenység sikerességéről visszaigazoló emailt kapnak. Bejelentkezés gombra kattintva eamil cím és jelszó megadását követően bejelentkezhetnek a weboldalra. Profiljukra kattintva megjelennek személyes adataik és profil képük melyeket meg tudnak változtatni az adatok váltosztatása gombra kattintva. Jelszavukat csak emailen keresztül tudják megváltoztatni. A fő oldalon az árusított könyvek listája jelenik meg aktuális hírek és akciókkal egyetemben. Keresés funkcióban a könyveket listázhatja a felhasználó cím, ár, író, kategória és egyéb tulajdonságaik alapján. A felhasználó a megvásárolni kívánt könyvet a kosarába tudja helyezni egy illetve több példányszámban. Kosarának tartalmát is meg tudja nézni és lehetősége van kivenni abból bizonyos tételeket ha úgy dönt hogy mégsem szeretné azokat megrendelni. Rendelés véglegesítését követően visszaigazoló emailt kap rendeléséről és annak adatairól. A felhasználónak lehetősége van értékelni weboldalunk és azon értékesített könyveket.
+
+## Nem funkcionális követelmények
+
+A weboldal több eszközön is elérhető lesz különböző böngészőkön keresztül. Könnyen átlátható modern felépítésű felhasználói felülettel. Naprakész információkkal, leírt funkcókat ellátva valamint mind a felhasználók mind az oldal adminisztrátorainak könnyű kezelhetőséget biztosítva.
 # Funkcionális terv
 
 ## Rendszerszereplők
@@ -90,12 +97,12 @@ A tesztelés során használt kiszolgáló hardver koonfigurációja a telepít�
 
 A tesztelés során a használt hardverek a napjainkban elterjedt hardverkonfigurációjú PC-k illetve laptopok, melyeken a leggyakrabban használt böngészőkön (Google Chrome, Mozzila Firefox, Microsoft Edge) teszteljük a rendszert az alábbiakban részletezettek szerint. 
 
-**A teszthez használt hardverkonfiguráció:**
+**A minimum hardverkonfiguráció:**
 
-- Intel i7 7700hq
-- 8GB RAM
-- 1000GB HDD
-- a képrenyők felbontása: 1920x1080
+- Intel Celeron processzor
+- 4GB RAM
+- 128GB HDD
+- a képrenyők felbontása: 1280x1024 vagy 1920x1080
 
 A tesztelés során az üzleti folyamatokhoz tartozó különböző forgatókönyvek eredményét vizsgáljuk. Amennyiben az elvártnak megfelelő eredményt kapjuk, a teszteset sikeresnek tekinthető, ellentkező esetben a hibát rögzítjük a tesztjegyzőkönyvben. Ezt követően a feljegyzett hibákat javítjuk a szoftverben, és újnóli tesztelésnek vetjük alá a rendszert.
 
