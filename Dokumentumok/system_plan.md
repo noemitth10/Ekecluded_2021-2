@@ -90,6 +90,8 @@ Maga a projekt egy webáruház létrehozása, ahol könyveket árulnak. Mivel we
 
 # Adatbázis terv
 
+![Image of usecase](https://raw.githubusercontent.com/noemitth10/Ekecluded_2021-2/main/Dokumentumok/%C3%81br%C3%A1k/database_plan.png)
+
 # Tesztterv
 A rendszerterv szerint implementált szoftver tesztelésének célja, hogy ellenőrizze az üzleti folyamaok modellje című pontban meghatározott helyes, specifikáció szerinti lefutását, valamint hogy a kliens webes felület felhasználóbarát módon jelenik meg, és használható különböző hardver és szoftverkörnyezetben.
 
