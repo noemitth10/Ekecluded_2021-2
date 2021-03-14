@@ -92,7 +92,7 @@ Maga a projekt egy webáruház létrehozása, ahol könyveket árulnak. Mivel we
 
 # Adatbázis terv
 
-![Image of usecase](https://raw.githubusercontent.com/noemitth10/Ekecluded_2021-2/main/Dokumentumok/%C3%81br%C3%A1k/database_plan.png)
+![Image of database_plan](https://raw.githubusercontent.com/noemitth10/Ekecluded_2021-2/main/Dokumentumok/%C3%81br%C3%A1k/database_plan.png)
 
 Felhasználóink és az általunk árusított könyvek adatait PostgreSQL-ben tároljuk mely egy nyílt forráskódú adatbázis. A könyvekről tároljuk címét rövid leírását oldalszámát borítóképét és árát. Az írókról nevüket, születési idejüket, rövid leírást róluk. Egyébiránt tároljuk a rendelési információkat is mint, hogy honnan rendeltek mennyi könyvet és a rendeléshez fűzött egyéni megjegyzést is.
 

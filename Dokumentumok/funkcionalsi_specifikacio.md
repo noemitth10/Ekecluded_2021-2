@@ -71,10 +71,10 @@ A webáruháznak lesznek vásárlói, illetve adminisztrátorai. A követelmény
 ![Image of usecase](https://raw.githubusercontent.com/noemitth10/Ekecluded_2021-2/main/Dokumentumok/%C3%81br%C3%A1k/USE_CASE_UML.png)
 
 # Képernyőtervek
-![Image of usecase](https://raw.githubusercontent.com/noemitth10/Ekecluded_2021-2/main/Dokumentumok/%C3%81br%C3%A1k/home.png)
-![Image of usecase](https://raw.githubusercontent.com/noemitth10/Ekecluded_2021-2/main/Dokumentumok/%C3%81br%C3%A1k/login.png)
-![Image of usecase](https://raw.githubusercontent.com/noemitth10/Ekecluded_2021-2/main/Dokumentumok/%C3%81br%C3%A1k/products.png)
-![Image of usecase](https://raw.githubusercontent.com/noemitth10/Ekecluded_2021-2/main/Dokumentumok/%C3%81br%C3%A1k/shoppingcart.png)
+![Image of screen design](https://raw.githubusercontent.com/noemitth10/Ekecluded_2021-2/main/Dokumentumok/%C3%81br%C3%A1k/home.png)
+![Image of screen design](https://raw.githubusercontent.com/noemitth10/Ekecluded_2021-2/main/Dokumentumok/%C3%81br%C3%A1k/login.png)
+![Image of screen design](https://raw.githubusercontent.com/noemitth10/Ekecluded_2021-2/main/Dokumentumok/%C3%81br%C3%A1k/products.png)
+![Image of screen design](https://raw.githubusercontent.com/noemitth10/Ekecluded_2021-2/main/Dokumentumok/%C3%81br%C3%A1k/shoppingcart.png)
 # Forgatókönyvek
 
 A kezdőlap oldal jelenik meg minden felhasználó számára legelőször, tartalmazza a Webshopra vonatkozó legfontosabb információkat. A navigációs sáv a Kezdőlap, Tájékoztató, Katalógus és Belépés/Regisztráció menüpontokat tartalmazza, ezek a rendszerbe való belépés előtt minden esetben megjelennek, a felhasználó bármelyik megjelenített oldalon kezdeményezheti az alábbi műveleteket vagy oldalak megjelenítését.
