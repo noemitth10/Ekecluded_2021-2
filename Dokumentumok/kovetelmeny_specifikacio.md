@@ -32,20 +32,20 @@ A webáruháznak lesznek vásárlói, illetve adminisztrátorai. A követelmény
 - Profil szerkesztése: a felhasználó tudja módosítani az adatit, jelszó módosítása, csak email címmel lehet.
 - Főoldal: a főoldalon a könyvek ki legyenek listázva, valamint jelenjenek meg ott hírek, illetve az aktuális akciókról szóló információk.
 - Keresési lehetőség: a felhasználó különböző értékek alapján tudja ki listázni a könyveket, mint pl.: cím, ár, író, kategória … stb.
-- Kosárba helyezés: a felhasználó kosárba tudja rakni a megvenni kivánt könyvet vagy könyveket.
-- Darab szám megadása: a felhasználó a könyv kosárba tétele előtt, lehetőséget kell biztosítani számára, arr, hogy a megadja azt, hogy hány darabot kíván venni az adott könyvből.
+- Kosárba helyezés: a felhasználó kosárba tudja rakni a megvenni kívánt könyvet vagy könyveket.
+- Darab szám megadása: a felhasználónak a könyv kosárba tétele előtt, lehetőséget kell biztosítani számára, arra, hogy a megadja azt, hogy hány darabot kíván venni az adott könyvből.
 - Kosár tartalmának megjelenítése: a felhasználó a rendelés le adása során meg tudja nézni a kosár tartalmát. Tehát annak ki listázása, valamint a végösszeg feltüntetése.
 - Kosár tartalmának módosítása: a felhasználó tudjon könyveket törölni a megvenni kívánt könyvek listájáról.
 - Értékelés: a felhasználók tudjanak értékelések leadni az adott könyvekről.
 
 ## Nem funkcionális követelmények:
 
-- A weboldalt interneten lhet elérni és akkor is megfelelően jelenik meg.
+- A weboldalt interneten lehet elérni és akkor is megfelelően jelenik meg.
 - Különböző eszközökön megfelelően jelenjen meg a weblap.
-- A témára vonatkozó adatokat tartalmazza, azaz ne jelenjenek meg oda nem illő tartamak.
+- A témára vonatkozó adatokat tartalmazza, azaz ne jelenjenek meg oda nem illő tartalmak.
 - A felhasználók könnyen eltudjanak benne igazodni.
 - A felhasználók könnyedén kitudják keresni az őket érdeklő könyveket.
-- A főoldalon minden friss információnak meg kell jelenie.
+- A főoldalon minden friss információnak meg kell jelennie.
 - A funkciók a leírtaknak megfelelően működjenek.
 - A felhasználók tudják szerkeszteni a profiljuk adatait, tudjanak vásárolni, böngészni, kosár tartalmát ki listázni, valamint azt módosítani, megvenni kívánt könyvek számát megadni, illetve rendelést leadni. Viszont az összes olyan cselekvést, amit csak is az adminisztrátorok tehetnek meg azt ne tudják meg tenni. Pl.: új könyvet felvenni, vagy egy adott könyv adatait szerkeszteni.
 - Az adminisztrátorok tudják kezelni a felhasználókat, illetve a könyveket.
