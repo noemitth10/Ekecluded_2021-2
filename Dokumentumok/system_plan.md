@@ -90,13 +90,8 @@ A Vásárlók menüpont tartalmazza a regisztrált vásárlók listáját, ahol 
 A Katalógus lenyíló menü tartalmazza a katalógusban való kereséshez és a könyvek katalogizálásához szükséges műveletek menüpontjait, melyek név szerint: Egyszerű keresés, Részletes keresés, Új könyv felvétele, Könyv módosítása, Könyv törlése. A menü két főbb tevékenység köré szerveződik, a keresés, könyvek katalógusba való felvétele, módosítása vagy törlése.
 	
 # Fizikai környezet
-<<<<<<< Updated upstream
-
-Maga a projekt egy webáruház létrehozása, ahol könyveket árulnak. Mivel webáruházról van szó így online fog megjelenni. Ezzel pedig az emberek bárhol, bármikor eltudják érni. Ehhez pedig internet kapcsolatra van szükségük. A megvalósítás során a JavaScript programozási nyelv lesz használva, így a fejlesztői környezet a Node.js lesz. A projekt elkészítésénél, mind a backend, mind pedig a frontend-et elkészítjük. A backend-nél az Express-t fogjuk használni, míg a frontend-nél pedig a React-ot. Mivel manapság az emberek már nem csak a pc-ken, hanem más egyéb eszközön is interneteznek, mint például mobiltelefon vagy tablet. Így kifejezetten fontos az, hogy a weboldal bármilyen eszközön megfelelően jelenjen meg. Ezt a készítés során fegyelembe vesszük és ennek megfelelően készítjük el a webáruházat. Adatbázis kezelésnél a MySQL-t fogjuk használni.
-=======
 ![Image of database_plan](https://raw.githubusercontent.com/noemitth10/Ekecluded_2021-2/main/Dokumentumok/%C3%81br%C3%A1k/database_plan.png)
 Maga a projekt egy webáruház létrehozása, ahol könyveket árulnak. Mivel webáruházról van szó így online fog megjelenni. Ezzel pedig az emberek bárhol, bármikor eltudják érni. Ehhez pedig internet kapcsolatra van szükségük. A megvalósítás során a javasscript programozási nyelv lesz használva, így a fejlesztői környezet a NodeJS lesz. A projekt elkészítésénél, mind a backend, mind pedig a frontend-et elkészítjük. A backend-nél az express-t fogjuk használni, míg a frontedn-nél pedig a react-ot. Mivel manapság az emberek már nem csak a pc-ken, hanem más egyéb eszközön is interneteznek, mint például mobiltelefon vagy tablet. Így kifejezetten fontos az, hogy a weboldal bármilyen eszközön megfelelően jelenjen meg. Ezt a készítés során fegyelembe vesszük és ennek megfelelően készítjük el a webáruházat. Adatbázis kezelésnél a mysql-t fogjuk használni.
->>>>>>> Stashed changes
 
 # Adatbázis terv
 
