@@ -53,6 +53,14 @@ A rendszerünkben három rendszerszerszereplő csoportot különbözetünk meg, 
 - Vásárló
 - Adminisztrátor
 
+### Admin:
+
+![Image of admin activity](https://raw.githubusercontent.com/noemitth10/Ekecluded_2021-2/main/Dokumentumok/%C3%81br%C3%A1k/ADMIN_ACTIVITY_UML.png)
+
+### Felhasználó:
+
+![Image of user activity](https://raw.githubusercontent.com/noemitth10/Ekecluded_2021-2/main/Dokumentumok/%C3%81br%C3%A1k/USER_ACTIVITY_UML.png)
+
 ### A rendszernek a következő funkciókat kell ellátnia:
 
 - az adminisztrátorok tudjanak könyveket felvenni, törölni illetve módosítani
@@ -91,6 +99,7 @@ A Katalógus lenyíló menü tartalmazza a katalógusban való kereséshez és a
 	
 # Fizikai környezet
 ![Image of database_plan](https://raw.githubusercontent.com/noemitth10/Ekecluded_2021-2/main/Dokumentumok/%C3%81br%C3%A1k/database_plan.png)
+
 Maga a projekt egy webáruház létrehozása, ahol könyveket árulnak. Mivel webáruházról van szó így online fog megjelenni. Ezzel pedig az emberek bárhol, bármikor eltudják érni. Ehhez pedig internet kapcsolatra van szükségük. A megvalósítás során a javasscript programozási nyelv lesz használva, így a fejlesztői környezet a NodeJS lesz. A projekt elkészítésénél, mind a backend, mind pedig a frontend-et elkészítjük. A backend-nél az express-t fogjuk használni, míg a frontedn-nél pedig a react-ot. Mivel manapság az emberek már nem csak a pc-ken, hanem más egyéb eszközön is interneteznek, mint például mobiltelefon vagy tablet. Így kifejezetten fontos az, hogy a weboldal bármilyen eszközön megfelelően jelenjen meg. Ezt a készítés során fegyelembe vesszük és ennek megfelelően készítjük el a webáruházat. Adatbázis kezelésnél a mysql-t fogjuk használni.
 
 # Adatbázis terv
