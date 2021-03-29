@@ -18,6 +18,16 @@ app.get("/users", function(req, res, next) {
       });
 })
 
+app.get("/category", function(req, res, next) {
+    con.query('SELECT * FROM categories', function (error, results, fields) {
+          if(error){
+              res.json({"status": 500, "error": error, "response": null});
+          } else {
+              res.json(results);
+          }
+      });
+})
+
 app.listen(5000, () => {
     console.log("server has started on port 5000")
 })
