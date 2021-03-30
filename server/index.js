@@ -39,6 +39,31 @@ app.get("/category/:id", function(req, res, next) {
       });
 })
 
+app.post("/category", function (req,res,next) {
+    const { category_name } = req.body;
+    if( category_name != " "){
+        con.query("SELECT category_name FROM categories WHERE category_name = '"+category_name+"'", function(error, result) {
+            if(error){
+                res.json({"status": 500, "error": error, "response": null});
+            } else {
+                if(result && result.length){
+                    res.json('This category is exist!');
+                } else {
+                    con.query("INSERT INTO categories (category_name) VALUES('"+category_name+"')", function (err) {
+                        if(err){
+                            res.json({"status": 500, "error": err, "response": null});
+                        } else {
+                            res.json('Inserted a category!');
+                        }
+                    });
+                }
+            }
+        });
+    } else {
+        res.json('Add the category name!');
+    }
+})
+
 app.listen(5000, () => {
     console.log("server has started on port 5000")
 })
