@@ -64,6 +64,32 @@ app.post("/category", function (req,res,next) {
     }
 })
 
+app.put("/category/:id", function (req,res,next) {
+    const { id } = req.params;
+    const { category_name } = req.body;
+    if(category_name != " "){
+        con.query("SELECT category_name FROM categories WHERE category_name = '"+category_name+"'", function(error, result) {
+            if(error){
+                res.json({"status": 500, "error": error, "response": null});
+            } else {
+                if(result && result.length){
+                    res.json('This category is exist!');
+                } else {
+                    con.query("UPDATE categories SET category_name = '" + category_name + "' WHERE category_id = " + id, function (error, result, fields) {
+                        if(error){
+                            res.json({"status": 500, "error": error, "response": null});
+                        } else {
+                            res.json('Updated a category!');
+                        }
+                    });
+                }
+            }
+        });
+    } else {
+        res.json('Add a category name!');
+    }
+})
+
 app.listen(5000, () => {
     console.log("server has started on port 5000")
 })
