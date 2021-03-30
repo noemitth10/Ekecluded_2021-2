@@ -75,9 +75,9 @@ app.put("/category/:id", function (req,res,next) {
                 if(result && result.length){
                     res.json('This category is exist!');
                 } else {
-                    con.query("UPDATE categories SET category_name = '" + category_name + "' WHERE category_id = " + id, function (error, result, fields) {
-                        if(error){
-                            res.json({"status": 500, "error": error, "response": null});
+                    con.query("UPDATE categories SET category_name = '" + category_name + "' WHERE category_id = " + id, function (err) {
+                        if(err){
+                            res.json({"status": 500, "error": err, "response": null});
                         } else {
                             res.json('Updated a category!');
                         }
@@ -88,6 +88,27 @@ app.put("/category/:id", function (req,res,next) {
     } else {
         res.json('Add a category name!');
     }
+})
+
+app.delete("/category/:id", function (req,res,next) {
+    const { id } = req.params;
+    con.query('SELECT category_id FROM categories WHERE category_id = ' + id, function(error, result) {
+        if(error){
+            res.json({"status": 500, "error": error, "response": null});
+        } else {
+            if(result && result.length){
+                con.query('DELETE FROM categories WHERE category_id = ' + id, function (err) {
+                    if(err){
+                        res.json({"status": 500, "error": err, "response": null});
+                    } else {
+                        res.json('Deleted a category!');
+                    }
+                });
+            } else {
+                res.json('This category is not exist!');
+            }
+        }
+    });
 })
 
 app.listen(5000, () => {
