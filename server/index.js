@@ -124,6 +124,19 @@ app.get("/books/:id", function(req, res, next) {
       });
 })
 
+app.delete("/books/:id", function(req, res, next ) {
+    const { id } = req.params;
+    con.query('DELETE FROM books WHERE book_id = ' + id, function(err, result) {
+        if(err) {
+            res.json({"status": 500, "error": error, "response": null});
+        } else if(result.affectedRows === 0) {
+            res.json('This book does not exist!');
+        } else {
+            res.json('Deleted book!');
+        }
+    });
+})
+
 
 app.listen(5000, () => {
     console.log("server has started on port 5000")
