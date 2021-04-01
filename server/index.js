@@ -191,6 +191,19 @@ app.get("/writers/:id", function(req, res, next) {
       });
 })
 
+app.delete("/writers/:id", function(req, res, next ) {
+    const { id } = req.params;
+    con.query('DELETE FROM writers WHERE writer_id = ' + id, function(err, result) {
+        if(err) {
+            res.json({"status": 500, "error": error, "response": null});
+        } else if(result.affectedRows === 0) {
+            res.json('This writer does not exist!');
+        } else {
+            res.json('Deleted writer!');
+        }
+    });
+})
+
 app.listen(5000, () => {
     console.log("server has started on port 5000")
 })
