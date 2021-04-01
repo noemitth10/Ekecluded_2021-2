@@ -219,6 +219,24 @@ app.post("/writers", function (req,res,next) {
     }
 })
 
+app.put("/writers/:id", function (req,res,next) {
+    try {
+        const { id } = req.params;
+        const { name, date_of_birth, country, image, description } = req.body;
+
+        con.query("UPDATE writers SET name = '" + name + "', date_of_birth = '" + date_of_birth + "', country = '" + country + "', image = '" + image + "', description = '" + description + "' WHERE writer_id = '" + id + "'",
+        function (err) {
+            if(err){
+                res.json({"status": 500, "error": err, "response": null});
+            } else {
+                res.json('Updated a writer!');
+            }
+        });
+    } catch(err) {
+        console.error(err.message);
+    }
+})
+
 app.listen(5000, () => {
     console.log("server has started on port 5000")
 })
