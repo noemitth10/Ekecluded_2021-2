@@ -90,23 +90,15 @@ app.put("/category/:id", function (req,res,next) {
     }
 })
 
-app.delete("/category/:id", function (req,res,next) {
+app.delete("/category/:id", function(req, res, next ) {
     const { id } = req.params;
-    con.query('SELECT category_id FROM categories WHERE category_id = ' + id, function(error, result) {
-        if(error){
+    con.query('DELETE FROM categories WHERE category_id = ' + id, function(err, result) {
+        if(err) {
             res.json({"status": 500, "error": error, "response": null});
+        } else if(result.affectedRows === 0) {
+            res.json('This category is not exist!');
         } else {
-            if(result && result.length){
-                con.query('DELETE FROM categories WHERE category_id = ' + id, function (err) {
-                    if(err){
-                        res.json({"status": 500, "error": err, "response": null});
-                    } else {
-                        res.json('Deleted a category!');
-                    }
-                });
-            } else {
-                res.json('This category is not exist!');
-            }
+            res.json('Deleted category!');
         }
     });
 })
