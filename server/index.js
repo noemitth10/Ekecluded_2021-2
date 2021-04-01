@@ -204,6 +204,21 @@ app.delete("/writers/:id", function(req, res, next ) {
     });
 })
 
+app.post("/writers", function (req,res,next) {
+    const { name, date_of_birth, country, image, description } = req.body;
+    if( name != null){
+        con.query("INSERT INTO writers (name, date_of_birth, country, image, description) VALUES(?, ?, ?, ?, ?)", [name, date_of_birth, country, image, description], function (err) {
+            if(err){
+                res.json({"status": 500, "error": err, "response": null});
+            } else {
+                res.json('Inserted a writer!');
+            }
+        });
+    } else {
+        res.json('Add the writer name!');
+    }
+})
+
 app.listen(5000, () => {
     console.log("server has started on port 5000")
 })
