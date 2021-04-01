@@ -137,6 +137,32 @@ app.delete("/books/:id", function(req, res, next ) {
     });
 })
 
+app.post("/books", function (req,res,next) {
+    const { book_id, title, description, image, pages, language, type, cost } = req.body;
+    if( book_id != " "){
+        con.query("SELECT book_id FROM books WHERE book_id = '"+book_id+"'", function(error, result) {
+            if(error){
+                res.json({"status": 500, "error": error, "response": null});
+            } else {
+                if(result && result.length){
+                    res.json('This book is already exist!');
+                } else {
+                    con.query("INSERT INTO books SET title = $1, description = $2, image = $3, pages = $4, language = $5, type = $6, cost = $7 ",
+                    [title, description, image, pages, language, type, cost],function (err) {
+                        if(err){
+                            res.json({"status": 500, "error": err, "response": null});
+                        } else {
+                            res.json('Inserted a book!');
+                        }
+                    });
+                }
+            }
+        });
+    } else {
+        res.json('Add the book id!');
+    }
+})
+
 
 app.listen(5000, () => {
     console.log("server has started on port 5000")
