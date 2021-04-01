@@ -103,6 +103,17 @@ app.delete("/category/:id", function(req, res, next ) {
     });
 })
 
+app.get("/books", function(req, res, next) {
+    con.query('SELECT * FROM books', function (error, results, fields) {
+          if(error){
+              res.json({"status": 500, "error": error, "response": null});
+          } else {
+              res.json(results);
+          }
+      });
+})
+
+
 app.listen(5000, () => {
     console.log("server has started on port 5000")
 })
