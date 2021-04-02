@@ -2,9 +2,17 @@ import '../App.css';
 
 function About() {
   return (
-    <div>
-        <h1>About</h1>
-    </div>
+    <>
+        <h2>Csapatunk tagjai</h2>
+        <ul>
+        <li>Alexa Kornél junior</li>
+        <li>Horváth István junior</li>
+        <li>Török Gabriella junior</li>
+        <li>Barkóczi Martin senior</li>
+        <li>Tóth Noémi Evelin senior</li>
+        </ul>
+        <p>A webalkalmazás célja, hogy felhasználók több kiadó által publikált számos könyv hatalmas választékából megtalálhasssa a számára legérdekesebbet és könyedén megrendelhesse azt akár nagy példányszámban is. Weboldalunk igyekszik minnél bővebb és mélyrehatóbb információt szolgáltatni az elérhető könyvekről és azok íróiról, hogy ezáltal is könnyebb legyen a választás. Ezen felül felhasználóknak lehetőségük lesz regisztrálni, szállítási adataik mentésével ezzel is gyorsíthatják jövőbeli rendeléseik folyamatát.</p>
+    </>
   );
 }
 
