@@ -10,6 +10,7 @@ function App() {
         <Nav/>
         <Switch>
           <Route path="/" exact component={Home}/>
+          <Route path="/about" component={Home}/>
         </Switch>
       </div>
     </Router>
