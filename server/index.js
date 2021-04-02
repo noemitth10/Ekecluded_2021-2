@@ -258,6 +258,19 @@ app.get("/publishers/:id", function(req, res, next) {
       });
 })
 
+app.delete("/publishers/:id", function(req, res, next ) {
+    const { id } = req.params;
+    con.query('DELETE FROM publishers WHERE publisher_id = ' + id, function(err, result) {
+        if(err) {
+            res.json({"status": 500, "error": error, "response": null});
+        } else if(result.affectedRows === 0) {
+            res.json('This publisher does not exist!');
+        } else {
+            res.json('Deleted publisher!');
+        }
+    });
+})
+
 app.listen(5000, () => {
     console.log("server has started on port 5000")
 })
