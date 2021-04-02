@@ -271,6 +271,17 @@ app.delete("/publishers/:id", function(req, res, next ) {
     });
 })
 
+app.post("/publishers", function (req,res,next) {
+    const { headquarters, name, phone_number } = req.body;
+    con.query("INSERT INTO publishers (headquarters, name, phone_number) VALUES(?, ?, ?)", [headquarters, name, phone_number], function (err) {
+        if(err){
+            res.json({"status": 500, "error": err, "response": null});
+        } else {
+            res.json('Inserted a publisher!');
+        }
+    });  
+})
+
 app.listen(5000, () => {
     console.log("server has started on port 5000")
 })
