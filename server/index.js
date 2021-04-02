@@ -247,6 +247,17 @@ app.get("/publishers", function(req, res, next) {
       });
 })
 
+app.get("/publishers/:id", function(req, res, next) {
+    const { id } = req.params;
+    con.query('SELECT * FROM publishers WHERE publisher_id = ' + id, function (error, result, fields) {
+          if(error){
+              res.json({"status": 500, "error": error, "response": null});
+          } else {
+              res.json(result);
+          }
+      });
+})
+
 app.listen(5000, () => {
     console.log("server has started on port 5000")
 })
