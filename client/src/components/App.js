@@ -16,9 +16,9 @@ function App() {
         <Switch>
           <Route path="/" exact component={Home}/>
           <Route path="/about" component={About}/>
-          <Route component={PageNotFound}/>
           <Route path='/list_books' component={ListBooks}/> 
           <Route exact path="/book-:book_id" component={Book} />
+          <Route component={PageNotFound}/>
         </Switch>
       </div>
     </Router>
