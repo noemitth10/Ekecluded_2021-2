@@ -31,7 +31,14 @@ return(
     <h1>Összes könyv</h1>
     {
         books.map((book) => (
-            <Book title={book.title} description={book.description}/>
+            <Link
+                to={{
+                        pathname: `/book-${book.book_id}`,
+                        state: { title: book.title, 
+                        description: book.description }
+                    }}
+            >{book.title}</Link>
+
 
         ))
     }

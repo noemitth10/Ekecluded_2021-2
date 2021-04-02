@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Book ({title, description}) {
+function Book (props) {
     return(
         <>
         <div>
-            <p>Cím: {title}</p>
-            <p>Leírás: {description}</p>
+            <p>Cím: {props.location.state.title}</p>
+            <p>Leírás: {props.location.state.description}</p>
         </div>
         </>
     )
