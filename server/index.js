@@ -282,6 +282,24 @@ app.post("/publishers", function (req,res,next) {
     });  
 })
 
+app.put("/publishers/:id", function (req,res,next) {
+    try {
+        const { id } = req.params;
+        const { headquarters, name, phone_number } = req.body;
+
+        con.query("UPDATE publishers SET headquarters = '" + headquarters + "', name = '" + name + "', phone_number = '" + phone_number + "' WHERE publisher_id = '" + id + "'",
+        function (err) {
+            if(err){
+                res.json({"status": 500, "error": err, "response": null});
+            } else {
+                res.json('Updated a publisher!');
+            }
+        });
+    } catch(err) {
+        console.error(err.message);
+    }
+})
+
 app.listen(5000, () => {
     console.log("server has started on port 5000")
 })
