@@ -1,0 +1,19 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+}
+
+.nav-style {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    list-style: none;
+}
+
+.nav-links {
+    color: black;
+    text-decoration: none;
+}
