@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const cors  =require("cors");
 const con = require("./db");
+const bcrypt = require('bcrypt');
 
 app.use(cors());
 app.use(express.json());
@@ -217,6 +218,18 @@ app.post("/writers", function (req,res,next) {
     } else {
         res.json('Add the writer name!');
     }
+})
+
+app.post("/register", async (req,res,next) => {
+
+    const username = req.body.username;
+    const password = req.body.password;
+    const saltRound = 10;
+    const salt = await bcrypt.genSalt(saltRound);
+    const bcryptPassword = await bcrypt.hash(password, salt);
+
+    con.query("INSERT INTO users (user_name, password) VALUES (?,?)", [username, bcryptPassword], (err, result) => { console.log(err);})
+    res.json("user inserted.");
 })
 
 app.put("/writers/:id", function (req,res,next) {
