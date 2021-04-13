@@ -7,13 +7,14 @@ import PageNotFound from './PageNotFound';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import ListBooks from './books/ListBooks';
 import Book from './books/Book';
+import {Container} from '@material-ui/core';
 
 
 function App() {
   return (
     <Router>
       <Nav/>
-      <div className="App">
+      <Container maxWidth="md" className="Cointainer">
         <Switch>
           <Route path="/" exact component={Home}/>
           <Route path="/about" component={About}/>
@@ -22,7 +23,7 @@ function App() {
           <Route path="/Register" exact component={Register}/>
           <Route component={PageNotFound}/>
         </Switch>
-      </div>
+      </Container>
     </Router>
   );
 }
