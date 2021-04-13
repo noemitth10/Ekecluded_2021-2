@@ -11,8 +11,8 @@ import Book from './books/Book';
 function App() {
   return (
     <Router>
+      <Nav/>
       <div className="App">
-        <Nav/>
         <Switch>
           <Route path="/" exact component={Home}/>
           <Route path="/about" component={About}/>

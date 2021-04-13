@@ -1,0 +1,19 @@
+.bookContainerRight{
+    width: 70%;
+    float: right;
+}
+
+.bookContainerLeft{
+    width: 30%;
+    float: left;
+    align-items: center;
+}
+
+.bookImage{
+    width: 60%;
+}
+
+.bookContainer{
+    width: 100%;
+
+}
