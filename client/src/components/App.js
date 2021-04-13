@@ -14,7 +14,7 @@ function App() {
   return (
     <Router>
       <Nav/>
-      <Container maxWidth="md" className="Cointainer">
+      <Container maxWidth="md" className="Container">
         <Switch>
           <Route path="/" exact component={Home}/>
           <Route path="/about" component={About}/>
