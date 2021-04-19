@@ -1,7 +1,9 @@
 .Container {
-  max-width: 50px;
+  width: auto;
   border: 2px solid black;
   border-radius: 10px;
   background: white;
   text-align: justify;
+  margin-top: 20px;
+  margin-block-end: 20px;
 }
