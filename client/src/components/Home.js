@@ -1,9 +1,11 @@
 import '../App.css';
+import ImageSlider from './ImageSlider';
+import { sliderData } from './SliderData';
 
 function Home() {
   return (
     <>
-        <h1>Home Page</h1>
+      <ImageSlider slides={sliderData}/>
     </>
   );
 }
