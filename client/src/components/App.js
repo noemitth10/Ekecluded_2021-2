@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import ListBooks from './books/ListBooks';
 import Book from './books/Book';
 import {Container} from '@material-ui/core';
+import Footer from '../layout/Footer';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route component={PageNotFound}/>
         </Switch>
       </Container>
+      <Footer/>
     </Router>
   );
 }
