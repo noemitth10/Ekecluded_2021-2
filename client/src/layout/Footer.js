@@ -9,7 +9,7 @@ import {
 
 function Footer() {
   return (
-      <footer>
+      <footer className="social-container">
           <h3>Social Follow</h3>
           <a href="https://www.youtube.com/" className="youtube social">
             <FontAwesomeIcon icon={faYoutube} size="2x" />
