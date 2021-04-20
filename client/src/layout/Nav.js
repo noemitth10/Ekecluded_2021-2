@@ -9,11 +9,6 @@ function Nav() {
         <img src={book} alt="Book Icon"/>
       </Link>
       <ul className="nav-style">
-        <Link className="nav-links" to="/">
-          <li>
-            Home
-          </li>
-        </Link>
         <Link className="nav-links" to="/books">
           <li>
             Books
