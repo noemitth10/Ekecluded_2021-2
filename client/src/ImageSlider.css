@@ -1,10 +1,11 @@
 .slider {
     position: relative;
-    min-height: 10vh;
+    height: 100vh;
     width: auto;
     display: block;
     justify-content: center;
     align-items: center;
+    padding-top: 10px;
 }
 
 .image {
@@ -15,7 +16,7 @@
 
 .right-arrow {
     position: absolute;
-    top: 50%;
+    top: 30%;
     right: 60px;
     font-size: 1rem;
     color: white;
@@ -26,7 +27,7 @@
 
 .left-arrow {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 60px;
     font-size: 1rem;
     color: white;
