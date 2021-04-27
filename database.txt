@@ -77,6 +77,29 @@ CREATE TABLE categories (
     category_name VARCHAR(255)  
 );
 
+INSERT INTO categories(category_name) VALUES('Lifestyle, health');
+INSERT INTO categories(category_name) VALUES('Esotericism');
+INSERT INTO categories(category_name) VALUES('Gastronomy');
+INSERT INTO categories(category_name) VALUES('Children and parents');
+INSERT INTO categories(category_name) VALUES('Children and youth');
+INSERT INTO categories(category_name) VALUES('Hobbies');
+INSERT INTO categories(category_name) VALUES('Literature');
+INSERT INTO categories(category_name) VALUES('Garden and apartment');
+INSERT INTO categories(category_name) VALUES('Art');
+INSERT INTO categories(category_name) VALUES('Lexicon, encyclopedia');
+INSERT INTO categories(category_name) VALUES('Money, investment, business');
+INSERT INTO categories(category_name) VALUES('Sport');
+INSERT INTO categories(category_name) VALUES('Specialist book');
+INSERT INTO categories(category_name) VALUES('Computer technology');
+INSERT INTO categories(category_name) VALUES('Entertaining literature');
+INSERT INTO categories(category_name) VALUES('Dictionary, language book');
+INSERT INTO categories(category_name) VALUES('Textbook, reference book');
+INSERT INTO categories(category_name) VALUES('Social sciences');
+INSERT INTO categories(category_name) VALUES('Science');
+INSERT INTO categories(category_name) VALUES('History');
+INSERT INTO categories(category_name) VALUES('Travel');
+INSERT INTO categories(category_name) VALUES('Religion');
+
 CREATE TABLE writers (
     writer_id SERIAL PRIMARY KEY,
     name VARCHAR(255),
