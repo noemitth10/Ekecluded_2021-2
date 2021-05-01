@@ -1,6 +1,7 @@
 import '../Nav.css';
 import { Link } from 'react-router-dom';
 import book from '../book-icon.svg';
+import ListCategories from '../components/ListCategories';
 
 function Nav() {
   return (
@@ -10,8 +11,11 @@ function Nav() {
       </Link>
       <ul className="nav-style">
         <Link className="nav-links" to="/books">
-          <li>
+          <li id="dropdown">
             Books
+            <div class="dropdown-content">
+              <ListCategories/>
+            </div>
           </li>
         </Link>
         <Link className="nav-links" to="/about">
