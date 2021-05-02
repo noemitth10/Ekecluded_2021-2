@@ -10,7 +10,7 @@ function Nav() {
         <img src={book} alt="Book Icon"/>
       </Link>
       <ul className="nav-style">
-        <Link className="nav-links" to="/books">
+        <Link className="nav-links" to="/list_books">
           <li id="dropdown">
             Books
             <div class="dropdown-content">
@@ -23,7 +23,7 @@ function Nav() {
             About
           </li>
         </Link>
-        <Link className="nav-links" to="/sing_up">
+        <Link className="nav-links" to="/Register">
           <li>
             Sing up
           </li>
