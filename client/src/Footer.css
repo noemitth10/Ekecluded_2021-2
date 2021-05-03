@@ -1,15 +1,39 @@
-.social-container {
+.footer-container {
     min-height: 20vh;
     width: auto;
     background: #6495ED;
     border-radius: 10px;
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
 }
 
-h3 {
+.delivery-container {
+    align-items: left;
+    width: 20%;
+}
+
+.delivery-container p{
+    padding-top: 50px;
+    color: white;
+    font-family: 'Coperplate';
+}
+
+.social-container {
+    display: block;
+    align-items: center;
+    width: 60%;
+}
+
+.social-container h3 {
     padding-top: 30px;
     color: white;
+    text-align: center;
     font-family: 'Copperplate';
+}
+
+.social-icons {
+    margin-left: 290px;
+    align-items: center;
 }
 
 a.social {
@@ -35,4 +59,19 @@ a.twitter {
   
 a.instagram {
     color: white;
+}
+
+.contact-container {
+    align-items: right;
+    width: 20%;
+}
+
+.contact-container p{
+    padding-top: 50px;
+    color: white;
+    font-family: 'Coperplate';
+}
+
+.information-link:hover{
+    text-decoration: none;
 }
