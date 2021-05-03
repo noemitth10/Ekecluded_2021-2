@@ -48,8 +48,9 @@ img {
 }
 
 #dropdown:hover .dropdown-content {
-    display:block;
-    height: 50%;
+    display: block;
+    border-radius: 10px;
+    height: auto;
     width: auto;
 }
 
@@ -63,4 +64,14 @@ img {
     margin-top: 20px;
     margin-left: 0;
     padding: 0;
+}
+
+.category-links {
+    text-decoration: none;
+    color: black;
+}
+
+.category-links:hover {
+    text-decoration: none;
+    color:black;
 }
