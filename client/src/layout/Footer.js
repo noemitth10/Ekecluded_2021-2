@@ -1,4 +1,5 @@
 import '../Footer.css';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faYoutube,
@@ -9,20 +10,32 @@ import {
 
 function Footer() {
   return (
-      <footer className="social-container">
+      <footer className="footer-container">
+        <div className="delivery-container">
+          <Link className="information-link" to="/delivery_information">
+            <p>Delivery Information</p>
+          </Link>
+        </div>
+        <div className="social-container">
           <h3>Social Follow</h3>
-          <a href="https://www.youtube.com/" className="youtube social">
-            <FontAwesomeIcon icon={faYoutube} size="2x" />
-          </a>
-          <a href="https://www.facebook.com/" className="facebook social">
-            <FontAwesomeIcon icon={faFacebook} size="2x" />
-          </a>
-          <a href="https://www.twitter.com/" className="twitter social">
-            <FontAwesomeIcon icon={faTwitter} size="2x" />
-          </a>
-          <a href="https://www.instagram.com/" className="instagram social">
-            <FontAwesomeIcon icon={faInstagram} size="2x" />
-          </a>
+          <div className="social-icons">
+            <a href="https://www.youtube.com/" className="youtube social">
+              <FontAwesomeIcon icon={faYoutube} size="2x" />
+            </a>
+            <a href="https://www.facebook.com/" className="facebook social">
+              <FontAwesomeIcon icon={faFacebook} size="2x" />
+            </a>
+            <a href="https://www.twitter.com/" className="twitter social">
+              <FontAwesomeIcon icon={faTwitter} size="2x" />
+            </a>
+            <a href="https://www.instagram.com/" className="instagram social">
+              <FontAwesomeIcon icon={faInstagram} size="2x" />
+            </a>
+          </div>
+        </div>
+        <div className="contact-container">
+          <p>Contact</p>
+        </div>
       </footer>
   );
 }
