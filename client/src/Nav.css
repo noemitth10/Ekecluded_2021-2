@@ -1,7 +1,7 @@
 nav {
     display: flex;
     justify-content: space-around;
-    align-items:baseline;
+    align-items: baseline;
     min-height: 10vh;
     background: #6495ED;
     border-radius: 10px;
