@@ -3,6 +3,8 @@ const app = express();
 const cors  =require("cors");
 const con = require("./db");
 const bcrypt = require('bcrypt');
+const { response } = require("express");
+const jwt = require("jsonwebtoken");
 
 app.use(cors());
 app.use(express.json());
@@ -231,6 +233,69 @@ app.post("/register", async (req,res,next) => {
     con.query("INSERT INTO users (user_name, password) VALUES (?,?)", [username, bcryptPassword], (err, result) => { console.log(err);})
     res.json("user inserted.");
 })
+
+const verifyJWT = (req,res,next) => {
+    const token = req.headers["x-access-token"]
+
+    if(!token) {
+        res.send("We need a token!")
+    } else {
+        jwt.verify(token, "jwtSecret", (err, decoded) => {
+            if(err) {
+                res.json({auth: false , message: "You failed to authenticate"});
+            } else {
+                req.userId = decoded.id;
+                next();
+            }
+        });
+    }
+};
+
+app.get('/isUserAuth', verifyJWT ,(req,res) =>{
+    res.send("You are authenticated!")
+})
+
+app.post('/login', async (req, res) => {
+    const username = req.body.username;
+    const password = req.body.password;
+    const saltRound = 10;
+    const salt = await bcrypt.genSalt(saltRound);
+    const bcryptPassword = await bcrypt.hash(password, salt);
+
+    con.query("SELECT * FROM users WHERE user_name = ?",username,
+    (err, result) => {
+        if (err) {
+            res.send({err: err});
+        }
+        
+        if (result.length > 0) {
+            bcrypt.compare(password, result[0].password, (error, response) => {
+                if(response) {
+                    //res.send(result);
+
+                    const id = result[0].id
+                    const token = jwt.sign({id}, "jwtSecret", {
+                        expiresIn: 300, //5perc
+                    });
+                    res.json({auth: true, token: token, result: result});
+
+                } else {
+                    res.json({auth: false, message: "Wrong username/password!"});
+                }
+            });
+        } else {
+            res.json({auth: false, message: "No user exists"});
+        }
+
+        /*if (result.length > 0) {
+            res.send(result);
+        } else {
+            res.send({message: "Wrong username/password!"});
+        }*/
+    });
+    //res.json("user inserted.");
+});
+
 
 app.put("/writers/:id", function (req,res,next) {
     try {
