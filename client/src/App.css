@@ -1,6 +1,6 @@
 .Container {
   width: auto;
-  border: 2px solid black;
+  box-shadow: 1px 6px 60px #999;
   border-radius: 10px;
   background: white;
   text-align: justify;
