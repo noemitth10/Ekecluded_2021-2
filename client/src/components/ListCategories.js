@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import { Link } from 'react-router-dom';
 
 function ListCategories() {
 
@@ -30,7 +31,11 @@ function ListCategories() {
         {
             categories.map((category) => (
                 <ul key={category.category_id} className="categoryList">
-                    <li>{category.category_name}</li>
+                    <Link className="category-links" to={`/category/${category.category_name}`}>
+                    <li>
+                        {category.category_name}
+                    </li>
+                    </Link>
                 </ul>
             ))
         }
