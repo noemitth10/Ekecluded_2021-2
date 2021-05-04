@@ -62,8 +62,21 @@ function AddBook(){
                 </div>
                 <select className="form-control" id="type" name="type" value={type} onChange={e => onChange(e)}>
                     <option value="Válasszon">Válasszon...</option>
-                    <option value="Krimi">Krimi</option>
+                    <option value="Családregény">Családregény</option>
+                    <option value="Dráma">Dráma</option>
+                    <option value="Életrajz">Életrajz</option>
                     <option value="Fantasy">Fantasy</option>
+                    <option value="Gyermekregény">Gyermekregény</option>
+                    <option value="Humor">Humor</option>
+                    <option value="Képregény">Képregény</option>
+                    <option value="Kisregény">Kisregény</option>
+                    <option value="Krimi">Krimi</option>
+                    <option value="Manga">Manga</option>
+                    <option value="Regény">Regény</option>
+                    <option value="Riport">Riport</option>
+                    <option value="Romantikus">Romantikus</option>
+                    <option value="Sci-fi">Sci-fi</option>
+                    <option value="Történelmi">Történelmi</option>
                 </select>
                 <div>
                     <label>Cost</label>
