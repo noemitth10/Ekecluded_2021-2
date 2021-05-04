@@ -10,6 +10,7 @@ import ListBooks from './books/ListBooks';
 import Book from './books/Book';
 import {Container} from '@material-ui/core';
 import Footer from '../layout/Footer';
+import AddBook from "./books/AddBook"
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route exact path="/book-:book_id" component={Book} />
           <Route path="/Register" exact component={Register}/>
           <Route path="/Login" exact component={Login}/>
+          <Route path="/add_book" exact component={AddBook}/>
           <Route component={PageNotFound}/>
         </Switch>
       </Container>
