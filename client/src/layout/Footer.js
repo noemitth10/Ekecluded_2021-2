@@ -13,11 +13,11 @@ function Footer() {
       <footer className="footer-container">
         <div className="delivery-container">
           <Link className="information-link" to="/delivery_information">
-            <p>Delivery Information</p>
+            <p>Szállítási információ</p>
           </Link>
         </div>
         <div className="social-container">
-          <h3>Social Follow</h3>
+          <h3>Közösségi média</h3>
           <div className="social-icons">
             <a href="https://www.youtube.com/" className="youtube social">
               <FontAwesomeIcon icon={faYoutube} size="2x" />
@@ -34,10 +34,10 @@ function Footer() {
           </div>
         </div>
         <div className="contact-container">
-          <p>Contact</p>
+          <p>Kapcsolat</p>
           <p id="email-phone">
             Email: admin@admin.hu<br/>
-            Phone: 136756788
+            Telefon: 136756788
           </p>
         </div>
       </footer>

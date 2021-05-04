@@ -27,7 +27,7 @@ function Nav({isAuthenticated, setAuth}) {
       <ul className="nav-style">
         <Link className="nav-links" to="/list_books">
           <li id="dropdown">
-            Books
+            Könyvek
             <div class="dropdown-content">
               <ListCategories/>
             </div>
@@ -35,7 +35,7 @@ function Nav({isAuthenticated, setAuth}) {
         </Link>
         <Link className="nav-links" to="/about">
           <li>
-            About
+            Rólunk
           </li>
         </Link>
         {
@@ -45,12 +45,12 @@ function Nav({isAuthenticated, setAuth}) {
           <>
             <Link className="nav-links" to="/Register">
             <li>
-              Sign up
+              Regisztráció
             </li>
             </Link>
             <Link className="nav-links" to="/sing_in">
             <li>
-              Sign in
+              Bejelentkezés
             </li>
             </Link>
           </>
