@@ -11,6 +11,7 @@ import Book from './books/Book';
 import {Container} from '@material-ui/core';
 import Footer from '../layout/Footer';
 import AddBook from "./books/AddBook"
+import CategoryByName from './categories/CategoryByName';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Route path="/Register" exact component={Register}/>
           <Route path="/Login" exact component={Login}/>
           <Route path="/add_book" exact component={AddBook}/>
+          <Route path="/category/:category_name" component={CategoryByName}/>
           <Route component={PageNotFound}/>
         </Switch>
       </Container>
