@@ -1,18 +1,29 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import { sliderData } from './SliderData';
 import {FaChevronLeft, FaChevronRight} from 'react-icons/fa';
 import '../ImageSlider.css';
 
+const delay = 10000;
+
 function ImageSlider({ slides }) {
-    const [current, setCurrent] = useState(0);
+    const [index, setIndex] = useState(0);
     const length = slides.length;
 
+    useEffect(() => {
+        setTimeout(() =>
+        setIndex((prevIndex) =>
+        prevIndex === slides.length -1 ? 0 : prevIndex + 1),
+        delay);
+
+        return () => {};
+    }, [index])
+
     const nextSlide = () => {
-        setCurrent(current === length - 1 ? 0 : current + 1);
+        setIndex(index === length - 1 ? 0 : index + 1);
     }
 
     const prevSlide = () => {
-        setCurrent(current === 0 ? length - 1 : current - 1);
+        setIndex(index === 0 ? length - 1 : index - 1);
     }
 
     if(!Array.isArray(slides) || slides.length <= 0){
@@ -20,22 +31,25 @@ function ImageSlider({ slides }) {
     }
     
     return(
-        <section className="slider">
+        <div className="slider">
             <FaChevronLeft className="left-arrow" onClick={prevSlide}/>
             <FaChevronRight className="right-arrow" onClick={nextSlide}/>
-            {sliderData.map((slide, index) => {
+            {slides.map((slide, id) => {
                 return (
-                    <section>
-                        <div className={index === current ? 'slide-active' : 'slide'} key={index}>
-                            {index === current && (<img src={slide.image} alt={slide.text} className="image"/>)}
-                            {index === 0 && current === 0 ? (<p className="text-block1">{slide.text}</p>) : null}
-                            {index === 1 && current === 1 ? (<p className="text-block2">{slide.text}</p>) : null}
-                            {index === 2 && current === 2 ? (<p className="text-block2">{slide.text}</p>) : null}
-                        </div>
-                    </section>
+                    <div className={id === index ? 'slide-active' : 'slide'} key={id}>
+                        {id === index && (<img src={slide.image} alt={slide.text} className="image"/>)}
+                        {id === 0 && index === 0 ? (<p className="text-block1">{slide.text}</p>) : null}
+                        {id === 1 && index === 1 ? (<p className="text-block2">{slide.text}</p>) : null}
+                        {id === 2 && index === 2 ? (<p className="text-block2">{slide.text}</p>) : null}
+                    </div>
                 );
             })}
-        </section>
+            <div className="sliderDots">
+                {slides.map((_, idx) => (
+                <div key={idx} className={`sliderDot${index === idx ? " active" : ""}`}></div>
+                ))}
+            </div>
+        </div>
     );
 }
 
