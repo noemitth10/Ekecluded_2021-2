@@ -77,28 +77,28 @@ CREATE TABLE categories (
     category_name VARCHAR(255)  
 );
 
-INSERT INTO categories(category_name) VALUES('Lifestyle, health');
-INSERT INTO categories(category_name) VALUES('Esotericism');
-INSERT INTO categories(category_name) VALUES('Gastronomy');
-INSERT INTO categories(category_name) VALUES('Children and parents');
-INSERT INTO categories(category_name) VALUES('Children and youth');
-INSERT INTO categories(category_name) VALUES('Hobbies');
-INSERT INTO categories(category_name) VALUES('Literature');
-INSERT INTO categories(category_name) VALUES('Garden and apartment');
-INSERT INTO categories(category_name) VALUES('Art');
-INSERT INTO categories(category_name) VALUES('Lexicon, encyclopedia');
-INSERT INTO categories(category_name) VALUES('Money, investment, business');
+INSERT INTO categories(category_name) VALUES('Életmód, egészség');
+INSERT INTO categories(category_name) VALUES('Ezotéria');
+INSERT INTO categories(category_name) VALUES('Gasztronómia');
+INSERT INTO categories(category_name) VALUES('Gyermekek és szülők');
+INSERT INTO categories(category_name) VALUES('Gyermek és ifúsági');
+INSERT INTO categories(category_name) VALUES('Hobbi');
+INSERT INTO categories(category_name) VALUES('Irodalom');
+INSERT INTO categories(category_name) VALUES('Kert és lakás');
+INSERT INTO categories(category_name) VALUES('Művészet');
+INSERT INTO categories(category_name) VALUES('Lexikon, enciklopédia');
+INSERT INTO categories(category_name) VALUES('Pénz, befektetés, üzlet');
 INSERT INTO categories(category_name) VALUES('Sport');
-INSERT INTO categories(category_name) VALUES('Specialist book');
-INSERT INTO categories(category_name) VALUES('Computer technology');
-INSERT INTO categories(category_name) VALUES('Entertaining literature');
-INSERT INTO categories(category_name) VALUES('Dictionary, language book');
-INSERT INTO categories(category_name) VALUES('Textbook, reference book');
-INSERT INTO categories(category_name) VALUES('Social sciences');
-INSERT INTO categories(category_name) VALUES('Science');
-INSERT INTO categories(category_name) VALUES('History');
-INSERT INTO categories(category_name) VALUES('Travel');
-INSERT INTO categories(category_name) VALUES('Religion');
+INSERT INTO categories(category_name) VALUES('Szakkönyv');
+INSERT INTO categories(category_name) VALUES('Számítástechnika');
+INSERT INTO categories(category_name) VALUES('Szórakoztató irodalom');
+INSERT INTO categories(category_name) VALUES('Szótár, nyelvkönyv');
+INSERT INTO categories(category_name) VALUES('Tankönyv, segédkönyv');
+INSERT INTO categories(category_name) VALUES('Társadalomtudomány');
+INSERT INTO categories(category_name) VALUES('Természettudomány');
+INSERT INTO categories(category_name) VALUES('Történelem');
+INSERT INTO categories(category_name) VALUES('Utazás');
+INSERT INTO categories(category_name) VALUES('Vallás');
 
 CREATE TABLE writers (
     writer_id SERIAL PRIMARY KEY,
