@@ -3,7 +3,22 @@ import { Link } from 'react-router-dom';
 import book from '../book-icon.svg';
 import ListCategories from '../components/ListCategories';
 
-function Nav() {
+function Nav({isAuthenticated, setAuth}) {
+  
+  const logout = (e) => {
+    e.preventDefault();
+
+    localStorage.removeItem("token");
+    localStorage.removeItem("user_id");
+    localStorage.removeItem("email");
+    localStorage.removeItem("address");
+    localStorage.removeItem("gender");
+    localStorage.removeItem("name");
+    localStorage.removeItem("phone_number");
+    localStorage.removeItem("user_name");
+    setAuth(false);
+  }
+
   return (
     <nav>
       <Link to="/">
@@ -23,16 +38,23 @@ function Nav() {
             About
           </li>
         </Link>
-        <Link className="nav-links" to="/Register">
-          <li>
-            Sing up
-          </li>
-        </Link>
-        <Link className="nav-links" to="/sing_in">
-          <li>
-            Sing in
-          </li>
-        </Link>
+        {
+          isAuthenticated ? 
+          <a href="/" onClick={e => logout(e)}>Kilépés</a>
+          :
+          <>
+            <Link className="nav-links" to="/Register">
+            <li>
+              Sign up
+            </li>
+            </Link>
+            <Link className="nav-links" to="/sing_in">
+            <li>
+              Sign in
+            </li>
+            </Link>
+          </>
+        }
       </ul>
     </nav>
   );

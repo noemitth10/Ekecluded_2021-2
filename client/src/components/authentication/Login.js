@@ -1,12 +1,13 @@
 import React, {useState} from 'react';
 import Axios from 'axios';
 
-function Login(){
+function Login({setAuth}){
 
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
 
     const [loginStatus, setLoginStatus] = useState(false);
+
 
     const login = () => {
         Axios.post('http://localhost:5000/login', {
@@ -17,9 +18,15 @@ function Login(){
             if(!response.data.auth){
                 setLoginStatus(false);
             } else {
-                console.log(response.data);
                 localStorage.setItem("token", response.data.token)
+                localStorage.setItem("email", response.data.result[0].email);
+                localStorage.setItem("address", response.data.result[0].address);
+                localStorage.setItem("gender", response.data.result[0].gender);
+                localStorage.setItem("name", response.data.result[0].name);
+                localStorage.setItem("phone_number", response.data.result[0].phone_number);
+                localStorage.setItem("user_name", response.data.result[0].user_name);
                 setLoginStatus(true);
+                setAuth(true);
             }
         });
     };
