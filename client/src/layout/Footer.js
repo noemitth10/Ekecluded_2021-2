@@ -35,6 +35,10 @@ function Footer() {
         </div>
         <div className="contact-container">
           <p>Contact</p>
+          <p id="email-phone">
+            Email: admin@admin.hu<br/>
+            Phone: 136756788
+          </p>
         </div>
       </footer>
   );
