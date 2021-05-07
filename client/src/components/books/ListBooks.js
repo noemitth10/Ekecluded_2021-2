@@ -35,7 +35,12 @@ return(
                 to={{
                         pathname: `/book-${book.book_id}`,
                         state: { title: book.title, 
-                        description: book.description }
+                        description: book.description,
+                        book_id: book.book_id,
+                        pages: book.pages,
+                        language: book.language,
+                        type: book.type,
+                        cost: book.cost }
                     }}
             >{book.title}</Link></p>
 

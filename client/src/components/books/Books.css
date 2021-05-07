@@ -6,7 +6,7 @@
 .bookContainerLeft{
     width: 30%;
     float: left;
-    align-items: center;
+    align-items: center;   
 }
 
 .bookImage{
@@ -15,5 +15,21 @@
 
 .bookContainer{
     width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+.bookContainerRight p{
+    padding: 0%;
+}
 
+.bookContainerRight .btn{
+    margin-right: 2%;
+    margin-bottom: 2%;
+    
+}
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

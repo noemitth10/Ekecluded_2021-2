@@ -1,6 +1,6 @@
 .footer-container {
     height: 20vh;
-    width: auto;
+    width: 100%;
     background: #6495ED;
     border-radius: 10px;
     display: flex;

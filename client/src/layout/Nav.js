@@ -38,6 +38,9 @@ function Nav({isAuthenticated, setAuth}) {
             Rólunk
           </li>
         </Link>
+        <Link className="nav-links" to="/ShoppingCart">
+          Kosár
+        </Link>
         {
           isAuthenticated ? 
           <a href="/" onClick={e => logout(e)}>Kilépés</a>

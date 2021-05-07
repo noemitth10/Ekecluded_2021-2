@@ -136,6 +136,7 @@ app.delete("/books/:id", function(req, res, next ) {
             res.json('This book does not exist!');
         } else {
             res.json('Deleted book!');
+            console.log("törölve");
         }
     });
 })
@@ -158,9 +159,9 @@ app.post("/books", function (req,res,next) {
 app.put("/books/:id", function (req,res,next) {
     try {
         const { id } = req.params;
-        const { title, description, image, pages, language, type, cost } = req.body;
+        const { title, description,  pages, language, type, cost } = req.body;
 
-        con.query("UPDATE books SET title = '" + title + "', description = '" + description + "', image = '" + image + "', pages = '" + pages + "', language = '" + language + "', type = '" + type + "', cost = '" + cost + "' WHERE book_id = '" + id + "'",
+        con.query("UPDATE books SET title = '" + title + "', description = '" + description + "', pages = '" + pages + "', language = '" + language + "', type = '" + type + "', cost = '" + cost + "' WHERE book_id = '" + id + "'",
         function (err) {
             if(err){
                 res.json({"status": 500, "error": err, "response": null});

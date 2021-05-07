@@ -13,8 +13,8 @@ import {Container} from '@material-ui/core';
 import Footer from '../layout/Footer';
 import AddBook from "./books/AddBook";
 import UserPage from './authentication/userPage';
-
-
+import EditBook from './books/EditBook';
+import ShoppingCart from './books/ShoppingCart';
 import CategoryByName from './categories/CategoryByName';
 
 
@@ -24,6 +24,7 @@ function App() {
     setIsAuthenticated(boolean);
     if(isAuthenticated == false) localStorage.removeItem("token");
   };
+  const shoppingCart = localStorage.setItem("shoppingCart", []);
   return (
     <Router>
       <Nav isAuthenticated={isAuthenticated} setAuth={setAuth}/>
@@ -38,7 +39,10 @@ function App() {
           <Route exact path="/user_page"  render={props => isAuthenticated ? <UserPage {...props} setAuth={setAuth}/> : <Redirect to="/Login" />}/>
           <Route path="/add_book" exact component={AddBook}/>
           <Route path="/category/:category_name" component={CategoryByName}/>
+          <Route path="/edit_book-:book_id" component={EditBook}/>
+          <Route path="/ShoppingCart" component={ShoppingCart}/>
           <Route component={PageNotFound}/>
+          
         </Switch>
       </Container>
       <Footer/>
