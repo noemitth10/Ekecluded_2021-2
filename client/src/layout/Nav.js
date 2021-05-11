@@ -33,14 +33,18 @@ function Nav({isAuthenticated, setAuth}) {
             </div>
           </li>
         </Link>
+        <Link className="nav-links" to="/add_book">
+          <li>
+            Könyv hozzáadása
+          </li>
+        </Link>
         <Link className="nav-links" to="/about">
           <li>
             Rólunk
           </li>
         </Link>
-        <Link className="nav-links" to="/ShoppingCart">
-          Kosár
-        </Link>
+      
+      
         {
           isAuthenticated ? 
           <a href="/" onClick={e => logout(e)}>Kilépés</a>
@@ -51,7 +55,7 @@ function Nav({isAuthenticated, setAuth}) {
               Regisztráció
             </li>
             </Link>
-            <Link className="nav-links" to="/sing_in">
+            <Link className="nav-links" to="/Login">
             <li>
               Bejelentkezés
             </li>
