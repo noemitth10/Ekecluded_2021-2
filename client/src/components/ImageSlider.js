@@ -1,5 +1,4 @@
-import React, {useState, useEffect} from 'react';
-import { sliderData } from './SliderData';
+import React, {useState, useEffect, useRef} from 'react';
 import {FaChevronLeft, FaChevronRight} from 'react-icons/fa';
 import '../ImageSlider.css';
 
@@ -8,14 +7,24 @@ const delay = 10000;
 function ImageSlider({ slides }) {
     const [index, setIndex] = useState(0);
     const length = slides.length;
+    const timeoutRef = useRef(null);
+
+    function resetTimeout() {
+        if (timeoutRef.current) {
+          clearTimeout(timeoutRef.current);
+        }
+    }
 
     useEffect(() => {
-        setTimeout(() =>
+        resetTimeout();
+        timeoutRef.current = setTimeout(() =>
         setIndex((prevIndex) =>
         prevIndex === slides.length -1 ? 0 : prevIndex + 1),
         delay);
 
-        return () => {};
+        return () => {
+            resetTimeout();
+        };
     }, [index])
 
     const nextSlide = () => {

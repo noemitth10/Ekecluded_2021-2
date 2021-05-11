@@ -1,7 +1,7 @@
 import '../Nav.css';
 import { Link } from 'react-router-dom';
 import book from '../book-icon.svg';
-import ListCategories from '../components/ListCategories';
+import ListCategories from '../components/categories/ListCategories';
 
 function Nav({isAuthenticated, setAuth}) {
   
