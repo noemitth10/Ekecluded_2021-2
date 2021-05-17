@@ -33,6 +33,7 @@ function Book (props) {
                     'Content-Type': 'application/json'
             });
             console.log(response);
+            alert("A könyv sikeresen törölve!");
         } catch (error) {
             console.error(error.message)
         }
