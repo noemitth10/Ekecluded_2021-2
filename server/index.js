@@ -42,9 +42,19 @@ app.get("/category/:id", function(req, res, next) {
       });
 })
 
-app.get("/books_category/:category_id", function(req, res, next) {
+app.get("/booksInCategory/:category_id", function(req, res, next) {
     const { category_id } = req.params;
-    con.query('SELECT * FROM books_category WHERE category_id = ' + category_id, function (error, result, fields) {
+    con.query('SELECT * FROM books, books_category WHERE books.book_id = books_category.book_id AND books_category.category_id = ' + category_id, function (error, result, fields) {
+          if(error){
+              res.json({"status": 500, "error": error, "response": null});
+          } else {
+              res.json(result);
+          }
+      });
+})
+
+app.get("/someBooks", function(req, res, next) {
+    con.query('SELECT * FROM books LIMIT 10', function (error, result, fields) {
           if(error){
               res.json({"status": 500, "error": error, "response": null});
           } else {
