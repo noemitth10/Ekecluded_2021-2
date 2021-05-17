@@ -1,6 +1,6 @@
 .slider {
     position: relative;
-    height: 100vh;
+    height: auto;
     width: auto;
     display: block;
     justify-content: center;
@@ -16,7 +16,7 @@
 
 .right-arrow {
     position: absolute;
-    top: 30%;
+    top: 45%;
     right: 60px;
     font-size: 1rem;
     color: white;
@@ -27,7 +27,7 @@
 
 .left-arrow {
     position: absolute;
-    top: 30%;
+    top: 45%;
     left: 60px;
     font-size: 1rem;
     color: white;
