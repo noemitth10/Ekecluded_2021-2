@@ -154,6 +154,7 @@ app.delete("/books/:id", function(req, res, next ) {
 
 app.post("/books", function (req,res,next) {
     const { title, description, image, pages, language, type, cost } = req.body;
+    console.log(req.body);
     if( title != " "){
         con.query("INSERT INTO books (title, description, image, pages, language, type, cost) VALUES(?, ?, ?, ?, ?, ?, ?)", [title, description, image, pages, language, type, cost], function (err) {
             if(err){
