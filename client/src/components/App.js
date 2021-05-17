@@ -15,7 +15,7 @@ import AddBook from "./books/AddBook";
 import UserPage from './authentication/userPage';
 import EditBook from './books/EditBook';
 import ShoppingCart from './books/ShoppingCart';
-import CategoryByName from './categories/CategoryByName';
+import BooksInCategory from './categories/BooksInCategory';
 
 
 function App() {
@@ -37,12 +37,16 @@ function App() {
           <Route path="/Register" exact component={Register}/>
           <Route path="/Login" render={props => !isAuthenticated ? <Login {...props} setAuth={setAuth}/> : <Redirect to="/user_page" />}/>
           <Route exact path="/user_page"  render={props => isAuthenticated ? <UserPage {...props} setAuth={setAuth}/> : <Redirect to="/Login" />}/>
+<<<<<<< Updated upstream
           <Route path="/add_book" component={AddBook}/>
           <Route path="/category/:category_id/:category_name" component={CategoryByName}/>
+=======
+          <Route path="/add_book" exact component={AddBook}/>
+          <Route path="/category/:category_name" component={BooksInCategory}/>
+>>>>>>> Stashed changes
           <Route path="/edit_book-:book_id" component={EditBook}/>
           <Route path="/ShoppingCart" component={ShoppingCart}/>
           <Route component={PageNotFound}/>
-          
         </Switch>
       </Container>
       <Footer/>
