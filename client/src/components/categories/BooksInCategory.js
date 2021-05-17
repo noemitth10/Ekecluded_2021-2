@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import '../../BooksInCategory.css';
+import { useHistory} from 'react-router-dom';
 
 function BooksInCategory( props) {
 
@@ -8,6 +9,7 @@ function BooksInCategory( props) {
     }, []);
     
     const [results, setResults] = useState([]);
+    let history = useHistory();
     
     const fetchResults= async () => {
         try {
@@ -24,10 +26,26 @@ function BooksInCategory( props) {
             console.error(err.message);
         }
     }
+    
+    function handleChange(value) {
+        history.push({pathname: `/category/${props.location.state.name}/${value}`,
+        state: { id: props.location.state.id, name: props.location.state.name}});
+    }
 
     return(
         <div>
-            <h3>{props.location.state.name}</h3>
+            <div className="head">
+                <h3>{props.location.state.name}</h3>
+                <div className="selection">
+                <select name="arrange" id="arrange" onChange={event => handleChange(event.target.value)}>
+                    <option value="arrange">Rendezés</option>
+                    <option value="cost_asc" >Árszerint Növekvő Sorrendben</option>
+                    <option value="cost_desc">Árszerint Csökkenő Sorrendben</option>
+                    <option value="title_asc">Címszerint Növekvő Sorrendben</option>
+                    <option value="title_desc">Címszerint Csökkenő Sorrendben</option>
+                </select>
+                </div>
+            </div>
             <hr/>
             <div className="grid">
                 {results.map((result, index) => (
