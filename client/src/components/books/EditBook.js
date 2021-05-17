@@ -26,7 +26,8 @@ function EditBook(props) {
 
         try {
             const body = { title, description, pages, language, type, cost};
-
+            if(title == undefined || !title.replace(/\s/g, '').length) { document.getElementById("edit-book-title").style.display = "block"; return; }
+            else { document.getElementById("edit-book-title").style.display = "none"; }
             const response = await fetch(`http://localhost:5000/books/${book_id}`, {
                 method: "PUT",
                 headers: {"Content-Type": "application/json"},
@@ -42,18 +43,22 @@ function EditBook(props) {
         <>
             <form onSubmit={onSubmitForm}>
                 <div>
+                    <span id="edit-book-title" className="error-message">A cím mező nem lehet üres.</span>
                     <label>Title</label>
                     <input type="text" name="title" className="form-control my-3" placeholder={title} value={title} onChange={e => onChange(e)}/>
                 </div>
                 <div>
+                    <span id="edit-book-description" className="error-message">A leírás mező nem lehet üres.</span>
                     <label>Description</label>
                     <textarea name="description" className="form-control my-3" placeholder={description} value={description} onChange={e => onChange(e)}/>
                 </div>
                 <div>
+                    <span id="edit-book-pages" className="error-message">Az oldalszám mező nem lehet üres.</span>
                     <label>Page Count</label>
                     <input type="number" name="pages" className="form-control my-3" placeholder={pages} value={pages} onChange={e => onChange(e)}/>
                 </div>
                 <div>
+                    <span id="edit-book-title" className="error-message">A nyelv mező nem lehet üres.</span>
                     <label>Language</label>
                     <input type="text" name="language" className="form-control my-3" placeholder={language} value={language} onChange={e => onChange(e)}/>
                 </div>
@@ -76,6 +81,7 @@ function EditBook(props) {
                     <option value="Történelmi">Történelmi</option>
                 </select>
                 <div>
+                    <span id="edit-book-title" className="error-message">Az ár mező nem lehet üres.</span>
                     <label>Cost</label>
                     <input type="number" name="cost" className="form-control my-3" placeholder={cost} value={cost} onChange={e => onChange(e)}/>
                 </div>
