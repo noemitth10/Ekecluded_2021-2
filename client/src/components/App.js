@@ -16,9 +16,13 @@ import UserPage from './authentication/userPage';
 import EditBook from './books/EditBook';
 import ShoppingCart from './books/ShoppingCart';
 import BooksInCategory from './categories/BooksInCategory';
+import BooksCost from './categories/BooksCost';
+import BooksCostDESC from './categories/BooksCostDESC';
+import BooksTitle from './categories/BooksTitle';
+import BooksTitleDESC from './categories/BooksTitleDESC';
+import DeliveryInformation from './DeliveryInformation';
 
-
-function App() {
+function App({match}) {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const setAuth = boolean => {
     setIsAuthenticated(boolean);
@@ -38,11 +42,15 @@ function App() {
           <Route path="/Login" render={props => !isAuthenticated ? <Login {...props} setAuth={setAuth}/> : <Redirect to="/user_page" />}/>
           <Route exact path="/user_page"  render={props => isAuthenticated ? <UserPage {...props} setAuth={setAuth}/> : <Redirect to="/Login" />}/>
           <Route path="/add_book" component={AddBook}/>
-          <Route path="/category/:category_name" component={BooksInCategory}/>
           <Route path="/add_book" exact component={AddBook}/>
-          <Route path="/category/:category_name" component={BooksInCategory}/>
+          <Route path="/category/:category_name" exact component={BooksInCategory}/>
           <Route path="/edit_book-:book_id" component={EditBook}/>
           <Route path="/ShoppingCart" component={ShoppingCart}/>
+          <Route path="/category/:category_name/cost_asc" component={BooksCost}/>
+          <Route path="/category/:category_name/cost_desc" component={BooksCostDESC}/>
+          <Route path="/category/:category_name/title_asc" component={BooksTitle}/>
+          <Route path="/category/:category_name/title_desc" component={BooksTitleDESC}/>
+          <Route path="/delivery_information" component={DeliveryInformation}/>
           <Route component={PageNotFound}/>
         </Switch>
       </Container>
