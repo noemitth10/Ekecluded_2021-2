@@ -7,3 +7,8 @@
   margin-top: 20px;
   margin-block-end: 20px;
 }
+
+hr {
+  border: 1px solid black;
+  width: 90%;
+}
