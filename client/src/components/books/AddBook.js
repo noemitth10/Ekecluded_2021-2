@@ -304,29 +304,226 @@ function AddBook(){
                     document.getElementById("edit-book-language").style.display = "none";
                     
                 }
-                if((title == undefined || !title.replace(/\s/g, '').length) &&
-               (description == undefined || !description.replace(/\s/g, '').length) &&
-               (pages == undefined || !pages.replace(/\s/g, '').length) &&
+                if(
                (language == undefined || !language.replace(/\s/g, '').length) &&
                (cost == undefined || !cost.replace(/\s/g, '').length)
              ) 
-             { document.getElementById("edit-book-title").style.display = "block";
-               document.getElementById("edit-book-description").style.display = "block";
-               document.getElementById("edit-book-pages").style.display = "block";
+             { 
                document.getElementById("edit-book-language").style.display = "block";
                document.getElementById("edit-book-cost").style.display = "block";
               
               return; }
             
+             else { 
+                    document.getElementById("edit-book-language").style.display = "none";
+                    document.getElementById("edit-book-cost").style.display = "none";
+                }
+                if((title == undefined || !title.replace(/\s/g, '').length) &&
+              
+               (cost == undefined || !cost.replace(/\s/g, '').length)
+             ) 
+             { document.getElementById("edit-book-title").style.display = "block";
+               
+               document.getElementById("edit-book-cost").style.display = "block";
+              
+              return; }
+            
+             else { document.getElementById("edit-book-title").style.display = "none"; 
+                    
+                    document.getElementById("edit-book-cost").style.display = "none";
+                }
+                if((title == undefined || !title.replace(/\s/g, '').length) &&
+               (description == undefined || !description.replace(/\s/g, '').length) 
+             ) 
+             { document.getElementById("edit-book-title").style.display = "block";
+               document.getElementById("edit-book-description").style.display = "block";
+
+              
+              return; }
+            
              else { document.getElementById("edit-book-title").style.display = "none"; 
                     document.getElementById("edit-book-description").style.display = "none";
+
+                }
+                if((title == undefined || !title.replace(/\s/g, '').length) &&
+               
+               (pages == undefined || !pages.replace(/\s/g, '').length) 
+
+
+             ) 
+             { document.getElementById("edit-book-title").style.display = "block";
+               
+               document.getElementById("edit-book-pages").style.display = "block";
+              
+             
+              
+              return; }
+            
+             else { document.getElementById("edit-book-title").style.display = "none"; 
+                   
+                    document.getElementById("edit-book-pages").style.display = "none";
+                 
+              
+                }
+
+                if((title == undefined || !title.replace(/\s/g, '').length) &&
+
+               (language == undefined || !language.replace(/\s/g, '').length) 
+
+             ) 
+             { document.getElementById("edit-book-title").style.display = "block";
+         
+
+               document.getElementById("edit-book-language").style.display = "block";
+   
+              
+              return; }
+            
+             else { document.getElementById("edit-book-title").style.display = "none"; 
+   
+                    document.getElementById("edit-book-language").style.display = "none";
+               
+                }
+                if(
+               (description == undefined || !description.replace(/\s/g, '').length) &&
+               
+               (language == undefined || !language.replace(/\s/g, '').length) 
+               
+             ) 
+             { 
+               document.getElementById("edit-book-description").style.display = "block";
+               
+               document.getElementById("edit-book-language").style.display = "block";
+               
+              
+              return; }
+            
+             else { 
+                    document.getElementById("edit-book-description").style.display = "none";
+                    
+                    document.getElementById("edit-book-language").style.display = "none";
+                    
+                }
+                if(
+               (pages == undefined || !pages.replace(/\s/g, '').length) &&
+               (language == undefined || !language.replace(/\s/g, '').length)
+             ) 
+             { 
+               document.getElementById("edit-book-pages").style.display = "block";
+               document.getElementById("edit-book-language").style.display = "block";
+               
+              
+              return; }
+            
+             else { 
                     document.getElementById("edit-book-pages").style.display = "none";
                     document.getElementById("edit-book-language").style.display = "none";
+                 
+                }
+                if(
+               (description == undefined || !description.replace(/\s/g, '').length) &&
+               (pages == undefined || !pages.replace(/\s/g, '').length) 
+               
+             ) 
+             { 
+               document.getElementById("edit-book-description").style.display = "block";
+               document.getElementById("edit-book-pages").style.display = "block";
+               
+              return; }
+            
+             else { 
+                    document.getElementById("edit-book-description").style.display = "none";
+                    document.getElementById("edit-book-pages").style.display = "none";
+                    
+                }
+                if(
+               (description == undefined || !description.replace(/\s/g, '').length) &&
+               
+               (cost == undefined || !cost.replace(/\s/g, '').length)
+             ) 
+             { 
+               document.getElementById("edit-book-description").style.display = "block";
+              
+               document.getElementById("edit-book-cost").style.display = "block";
+              
+              return; }
+            
+             else { 
+                    document.getElementById("edit-book-description").style.display = "none";
+                    
+                    document.getElementById("edit-book-cost").style.display = "none";
+                }
+                if(
+               (pages == undefined || !pages.replace(/\s/g, '').length) &&
+               
+               (cost == undefined || !cost.replace(/\s/g, '').length)
+             ) 
+             { 
+               document.getElementById("edit-book-pages").style.display = "block";
+               
+               document.getElementById("edit-book-cost").style.display = "block";
+              
+              return; }
+            
+             else { 
+                    document.getElementById("edit-book-pages").style.display = "none";
+                    
                     document.getElementById("edit-book-cost").style.display = "none";
                 }
                 if(title == undefined || !title.replace(/\s/g, '').length) { document.getElementById("edit-book-title").style.display = "block"; return; }
                 else { document.getElementById("edit-book-title").style.display = "none"; }
+
+                if(
+               (description == undefined || !description.replace(/\s/g, '').length) 
+             ) 
+             { 
+               document.getElementById("edit-book-description").style.display = "block";
+               
+              
+              return; }
             
+             else { 
+                    document.getElementById("edit-book-description").style.display = "none";
+                    
+                }
+            
+                if(
+               (pages == undefined || !pages.replace(/\s/g, '').length) 
+             ) 
+             { 
+               document.getElementById("edit-book-pages").style.display = "block";
+               
+              return; }
+            
+             else { 
+                    document.getElementById("edit-book-pages").style.display = "none";
+                    
+                }
+
+                if(
+               (language == undefined || !language.replace(/\s/g, '').length)
+             ) 
+             { 
+               document.getElementById("edit-book-language").style.display = "block";
+               
+              
+              return; }
+            
+             else { 
+                    document.getElementById("edit-book-language").style.display = "none";
+                    
+                }
+                if(
+               (cost == undefined || !cost.replace(/\s/g, '').length)
+             ) 
+             { 
+               document.getElementById("edit-book-cost").style.display = "block";
+              
+              return; }
+            
+             else { 
+                    document.getElementById("edit-book-cost").style.display = "none";
+                }
             console.log(body);
             const response = await fetch("http://localhost:5000/books", {
                 method: "POST",
