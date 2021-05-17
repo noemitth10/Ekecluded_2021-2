@@ -14,7 +14,17 @@ hr {
     width: 90%;
 }
 
-h3 {
-    text-align: center;
+.head {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+select {
+    border-radius: 10px;
+    height: 25px;
+}
+
+.selection {
     padding-top: 10px;
 }
