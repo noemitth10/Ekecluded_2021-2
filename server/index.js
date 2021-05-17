@@ -42,27 +42,6 @@ app.get("/category/:id", function(req, res, next) {
       });
 })
 
-app.get("/booksInCategory/:category_id", function(req, res, next) {
-    const { category_id } = req.params;
-    con.query('SELECT * FROM books, books_category WHERE books.book_id = books_category.book_id AND books_category.category_id = ' + category_id, function (error, result, fields) {
-          if(error){
-              res.json({"status": 500, "error": error, "response": null});
-          } else {
-              res.json(result);
-          }
-      });
-})
-
-app.get("/someBooks", function(req, res, next) {
-    con.query('SELECT * FROM books LIMIT 10', function (error, result, fields) {
-          if(error){
-              res.json({"status": 500, "error": error, "response": null});
-          } else {
-              res.json(result);
-          }
-      });
-})
-
 app.post("/category", function (req,res,next) {
     const { category_name } = req.body;
     if( category_name != " "){
@@ -125,6 +104,71 @@ app.delete("/category/:id", function(req, res, next ) {
             res.json('Deleted category!');
         }
     });
+})
+
+app.get("/booksInCategory/:category_id", function(req, res, next) {
+    const { category_id } = req.params;
+    con.query('SELECT * FROM books, books_category WHERE books.book_id = books_category.book_id AND books_category.category_id = ' + category_id, function (error, result, fields) {
+          if(error){
+              res.json({"status": 500, "error": error, "response": null});
+          } else {
+              res.json(result);
+          }
+      });
+})
+
+app.get("/books_cost/:category_id", function(req, res, next) {
+    const { category_id } = req.params;
+    con.query('SELECT * FROM books, books_category WHERE books.book_id = books_category.book_id AND books_category.category_id = ' + category_id + ' ORDER BY books.cost', function (error, result, fields) {
+          if(error){
+              res.json({"status": 500, "error": error, "response": null});
+          } else {
+              res.json(result);
+          }
+      });
+})
+
+app.get("/books_cost_desc/:category_id", function(req, res, next) {
+    const { category_id } = req.params;
+    con.query('SELECT * FROM books, books_category WHERE books.book_id = books_category.book_id AND books_category.category_id = ' + category_id + ' ORDER BY books.cost DESC', function (error, result, fields) {
+          if(error){
+              res.json({"status": 500, "error": error, "response": null});
+          } else {
+              res.json(result);
+          }
+      });
+})
+
+app.get("/books_title/:category_id", function(req, res, next) {
+    const { category_id } = req.params;
+    con.query('SELECT * FROM books, books_category WHERE books.book_id = books_category.book_id AND books_category.category_id = ' + category_id + ' ORDER BY books.title', function (error, result, fields) {
+          if(error){
+              res.json({"status": 500, "error": error, "response": null});
+          } else {
+              res.json(result);
+          }
+      });
+})
+
+app.get("/books_title_desc/:category_id", function(req, res, next) {
+    const { category_id } = req.params;
+    con.query('SELECT * FROM books, books_category WHERE books.book_id = books_category.book_id AND books_category.category_id = ' + category_id + ' ORDER BY books.title DESC', function (error, result, fields) {
+          if(error){
+              res.json({"status": 500, "error": error, "response": null});
+          } else {
+              res.json(result);
+          }
+      });
+})
+
+app.get("/someBooks", function(req, res, next) {
+    con.query('SELECT * FROM books LIMIT 10', function (error, result, fields) {
+          if(error){
+              res.json({"status": 500, "error": error, "response": null});
+          } else {
+              res.json(result);
+          }
+      });
 })
 
 app.get("/books", function(req, res, next) {
