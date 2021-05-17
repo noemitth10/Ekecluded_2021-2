@@ -31,11 +31,15 @@ function ListCategories() {
         {
             categories.map((category) => (
                 <ul key={category.category_id} className="categoryList">
-                    <Link className="category-links" to={`/category/${category.category_id}/${category.category_name}`}>
                     <li>
+                    <Link className="category-links"
+                    to={{
+                        pathname: `/category/${category.category_name}`,
+                        state: { id: category.category_id, name: category.category_name}
+                    }}>
                         {category.category_name}
-                    </li>
                     </Link>
+                    </li>
                 </ul>
             ))
         }
