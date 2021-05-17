@@ -1,19 +1,18 @@
 import React, {useState, useEffect} from 'react';
 import '../../BooksInCategory.css';
-import { useHistory} from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
-function BooksInCategory( props) {
+function BooksTitle(props) {
 
     useEffect(() => {
         fetchResults();
     }, []);
     
     const [results, setResults] = useState([]);
-    let history = useHistory();
     
     const fetchResults= async () => {
         try {
-        const data = await fetch(`http://localhost:5000/booksInCategory/${props.location.state.id}`,{
+        const data = await fetch(`http://localhost:5000/books_title/${props.location.state.id}`,{
             method: "GET",
             headers: {token: localStorage.token}}
         );
@@ -26,7 +25,9 @@ function BooksInCategory( props) {
             console.error(err.message);
         }
     }
-    
+
+    let history = useHistory();
+
     function handleChange(value) {
         history.push({pathname: `/category/${props.location.state.name}/${value}`,
         state: { id: props.location.state.id, name: props.location.state.name}});
@@ -39,7 +40,7 @@ function BooksInCategory( props) {
                 <div className="selection">
                 <select name="arrange" id="arrange" onChange={event => handleChange(event.target.value)}>
                     <option value="arrange">Rendezés</option>
-                    <option value="cost_asc" >Árszerint Növekvő Sorrendben</option>
+                    <option value="cost_asc">Árszerint Növekvő Sorrendben</option>
                     <option value="cost_desc">Árszerint Csökkenő Sorrendben</option>
                     <option value="title_asc">Címszerint Növekvő Sorrendben</option>
                     <option value="title_desc">Címszerint Csökkenő Sorrendben</option>
@@ -59,4 +60,4 @@ function BooksInCategory( props) {
     );
 }
 
-export default BooksInCategory;
+export default BooksTitle;

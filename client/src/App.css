@@ -12,3 +12,16 @@ hr {
   border: 1px solid black;
   width: 90%;
 }
+
+h3 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.delivery_information p {
+  text-align: left;
+}
+
+li {
+  text-align: left;
+}
