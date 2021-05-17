@@ -1,0 +1,11 @@
+.grid {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid div {
+    text-align: center;
+    margin: 2px;
+    padding: 10px;
+}
