@@ -63,6 +63,17 @@ CREATE TABLE books (
     REFERENCES book_writer(book_id) ON DELETE CASCADE
 );
 
+INSERT INTO books(publisher_id,title,description,image,pages,language,type,cost) VALUES(1,'Lélegzet','Egy elveszett tudás újrafelfedezése','./images/lelegzet.jpeg',335,'Magyar','Füles, kartonált',4490);
+INSERT INTO books(publisher_id,title,description,image,pages,language,type,cost) VALUES(2,'Keto természetesen - Érd el az optimális egészséget, testsúlyt és fittséget a zsír erejével!','A KETO természetesen című könyvünk részletesen ismerteti, hogy a ketogén étrend miért áll ma a figyelem középpontjában, miért használják krónikus betegségek kiegészítő kezelésére, és miért alkalmazható sikeresen a top sportolók körében is. A szerzőpáros rávilágít arra, hogy mi a különbség a ketogén diéta és a természetes ketogén diéta között: az utóbbi nemcsak a ketogén alapelveket alkalmazza, hanem a paleolit étkezés szabályait is beépíti az étrendbe.','./images/keto-termeszetesen.jpeg',268,'Magyar','Karton',3999);
+INSERT INTO books(publisher_id,title,description,image,pages,language,type,cost) VALUES(3,'A tizenegy titok - Sorsiránytű','Iránytű az új tudatossághoz. A könyv az élet 11 területén mutatja be, hoygan alkalmazhatunk egy új tudatformát.','./images/tizenegy-titok.jpeg',213,'Magyar','Karton',3990);
+INSERT INTO books(publisher_id,title,description,image,pages,language,type,cost) VALUES(4,'Anya, kérek még! - Hozzátáplálás egyszerűen','Amikor a hozzátáplálás témája aktuálissá válik, édesanyaként sokféle egymásnak ellentmondó információval találkozhatsz.','../../images/anya_kerek_meg.jpeg',253,'Magyar','Füles, kartonált',3392);
+INSERT INTO books(publisher_id,title,description,image,pages,language,type,cost) VALUES(5,'Melegszívű fegyelmezés - Kisgyerekkortól kamaszkorig','A gyereknevelésben ugyanúgy vannak korszakok és divatok, mint a kultúra minden más területén.','../../images/melegszivu_fegyelmezes.jpeg',338,'Magyar','Puhatáblás, ragasztott',2856);
+INSERT INTO books(publisher_id,title,description,image,pages,language,type,cost) VALUES(6,'Higgy nekem - II. trilógia - Iskolák versenye 2. rész','Már ötödik napja tart az IOV, és a címvédő piros csapat még mindig versenyben van, méghozzá nem is akárhogy; a résztvevők és szervezők is őket tartják az egyik legesélyesebbnek a győzelemre.','../../images/higy_nekem_II_trilogia.jpeg',493,'Magyar','Füles, kartonált',3230);
+INSERT INTO books(publisher_id,title,description,image,pages,language,type,cost) VALUES(7,'A te kutyád is nevelhető - Nehezebb esetek eredményes képzése','Nehezebb esetek eredményes képzése','../../images/kutya_neveles.jpeg',256,'Magyar','Karton',3392);
+INSERT INTO books(publisher_id,title,description,image,pages,language,type,cost) VALUES(8,'A csütörtöki nyomozóklub','2020 egyik legnagyobb szenzációja!','../../images/csutortoki_nyomozoklub.jpeg',368,'Magyar','Keménytábla, védőborító',3808);
+INSERT INTO books(publisher_id,title,description,image,pages,language,type,cost) VALUES(9,'Rend a lelke mindennek - A varázslatos japán módszer, amellyel örökre száműzheted a rendetlenséget az otthonodból','A varázslatos japán módszer, amellyel örökre száműzheted a rendetlenséget az otthonodból','../../images/rend_a_lelke.jpeg',234,'Magyar','Puhatáblás, ragasztókötött',2542);
+INSERT INTO books(publisher_id,title,description,image,pages,language,type,cost) VALUES(10,'Zöldlámpa','Brutális finomságok, szépségek, elhasalások. Szerelmeslevél az élethez.','../../images/zoldlampa.jpeg',297,'Magyar','Keménytábla, védőborító',4242);
+
 CREATE TABLE books_category (
     id SERIAL PRIMARY KEY,
     book_id INT,
@@ -71,6 +82,17 @@ CREATE TABLE books_category (
     CONSTRAINT fk_category_id FOREIGN KEY(category_id)
     REFERENCES categories(category_id) ON DELETE CASCADE
 );
+
+INSERT INTO books_category(book_id,category_id) VALUES(1,1);
+INSERT INTO books_category(book_id,category_id) VALUES(2,1);
+INSERT INTO books_category(book_id,category_id) VALUES(3,2);
+INSERT INTO books_category(book_id,category_id) VALUES(4,3);
+INSERT INTO books_category(book_id,category_id) VALUES(5,4);
+INSERT INTO books_category(book_id,category_id) VALUES(6,5);
+INSERT INTO books_category(book_id,category_id) VALUES(7,6);
+INSERT INTO books_category(book_id,category_id) VALUES(8,7);
+INSERT INTO books_category(book_id,category_id) VALUES(9,8);
+INSERT INTO books_category(book_id,category_id) VALUES(10,9);
 
 CREATE TABLE categories (
     category_id SERIAL PRIMARY KEY,
