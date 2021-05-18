@@ -8,6 +8,7 @@ function Home() {
     <>
       <ImageSlider slides={sliderData}/>
       <hr/>
+      <h6>Legfrissebb könyvek</h6>
       <SomeBooks/>
     </>
   );
