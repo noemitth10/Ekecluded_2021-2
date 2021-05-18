@@ -1,5 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import '../../SomeBooks.css';
+import bookCover from '../../images/book_cover.jpg';
+import { Link } from 'react-router-dom';
 
 function SomeBooks() {
     useEffect(() => {
@@ -27,7 +29,18 @@ function SomeBooks() {
       <div className="grid">
           {results.map((result, index) => (
               <div key={index}>
-                  {result.title}<br/>
+                  <img src={bookCover} alt={result.title} width="70" height="100"/><br/>
+                  <br/>
+                  <Link className="books-link" to={{
+                        pathname: `/book-${result.book_id}`,
+                        state: { title: result.title, 
+                        description: result.description,
+                        book_id: result.book_id,
+                        pages: result.pages,
+                        language: result.language,
+                        type: result.type,
+                        cost: result.cost }
+                    }}>{result.title}</Link><br/>
                   <br/>
                   {result.cost} Ft
               </div>
