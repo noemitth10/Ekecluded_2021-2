@@ -73,6 +73,19 @@ INSERT INTO books(publisher_id,title,description,image,pages,language,type,cost)
 INSERT INTO books(publisher_id,title,description,image,pages,language,type,cost) VALUES(8,'A csütörtöki nyomozóklub','2020 egyik legnagyobb szenzációja!','../../images/csutortoki_nyomozoklub.jpeg',368,'Magyar','Keménytábla, védőborító',3808);
 INSERT INTO books(publisher_id,title,description,image,pages,language,type,cost) VALUES(9,'Rend a lelke mindennek - A varázslatos japán módszer, amellyel örökre száműzheted a rendetlenséget az otthonodból','A varázslatos japán módszer, amellyel örökre száműzheted a rendetlenséget az otthonodból','../../images/rend_a_lelke.jpeg',234,'Magyar','Puhatáblás, ragasztókötött',2542);
 INSERT INTO books(publisher_id,title,description,image,pages,language,type,cost) VALUES(10,'Zöldlámpa','Brutális finomságok, szépségek, elhasalások. Szerelmeslevél az élethez.','../../images/zoldlampa.jpeg',297,'Magyar','Keménytábla, védőborító',4242);
+INSERT INTO books(publisher_id,title,description,image,pages,language,type,cost) VALUES(11,'Magyar szólások és közmondások','O. Nagy Gábor mintegy húszezer magyar szólást és közmondást felölelő gyűjteménye az eddigi legteljesebb ilyen jellegű munka.','../../images/magyar_szolas_kozmondas.jpg',863,'Magyar','Keménytábla, védőborító',4242);
+INSERT INTO books(publisher_id,title,description,image,pages,language,type,cost) VALUES(12,'Hogyan szerezzünk barátokat és befolyásoljuk az embereket Sikerkalauz1 - Sikerkalauz 1.','Sikerkalauz 1.','../../images/sikerkalauz1.jpg',256,'Magyar','Puhatáblás, ragasztókötött',2508);
+INSERT INTO books(publisher_id,title,description,image,pages,language,type,cost) VALUES(13,'UEFA EURO 2020 - Hivatalos kézikönyv.','Az UEFA által szervezett 16. Európa-bajnokság, az EURO 2020, minden szurkolót közelebb hoz a profi futball legjobbjaihoz.','../../images/uefa.jpg',128,'Magyar','Karton',2975);
+INSERT INTO books(publisher_id,title,description,image,pages,language,type,cost) VALUES(14,'Vályogházak - Építés, korszerűsítés, átalakítás','Hazánk területén még ma is nagy számban megtalálhatók a földből épült házak minden tájegységben.','../../images/valyoghazak.jpg',159,'Magyar','Puhatáblás, ragasztókötött',3570);
+INSERT INTO books(publisher_id,title,description,image,pages,language,type,cost) VALUES(15,'Szoftverfejlesztés okosan Pythonnal - Agilis csapatok közös nyelve','A Python nemcsak népszerű és modern programozási nyelv, hanem könnyen tanulható és hatékony eszköz is.','../../images/pyhton.jpg',118,'Magyar','Karton',2465);
+INSERT INTO books(publisher_id,title,description,image,pages,language,type,cost) VALUES(16,'Egy párizsi apartman','Párizs, egy zöldellő fasor végén megbúvó műteremlakás. Madeline azért bérelte ki, hogy félrevonuljon, és kipihenje magát.','../../images/parizs_apart.jpg',352,'Magyar','Karton',3358);
+INSERT INTO books(publisher_id,title,description,image,pages,language,type,cost) VALUES(17,'Színes kérdések és válaszok angol nyelvből - C1 szint - CD-melléklettel','Könyvünkkel az angol nyelvtudás magas szintű elsajátításához, tökéletesítéséhez szeretnénk segítséget nyújtani.','../../images/angol.jpg',276,'Magyar','Puhatáblás, ragasztókötött',3978);
+INSERT INTO books(publisher_id,title,description,image,pages,language,type,cost) VALUES(18,'KRESZ TESZT könyv személygépkocsi-vezetők részére','A teszt könyv 1966 db. teszt kérdést tartalmaz tematikusan sorba rendezve hét fő fejezetre bontva.','../../images/kresz_teszt.jpg',317,'Magyar','Puhatáblás, ragasztókötött',2465);
+INSERT INTO books(publisher_id,title,description,image,pages,language,type,cost) VALUES(19,'Örökölt sors - Családi sebek és a gyógyulás útjai','Amikor elkezdjük kutatni elakadásaink, szorongásaink, elhibázott párkapcsolataink, ismétlődő kudarcaink okát, gyakran kiderül, hogy saját életünk történései nem adnak megfelelő magyarázatot.','../../images/orok_sors.jpg',288,'Magyar','Puhatáblás, ragasztókötött',2856);
+INSERT INTO books(publisher_id,title,description,image,pages,language,type,cost) VALUES(20,'A természet jelbeszéde - Kertészkedő hangyák, "liftező" ölyvek, virágillat és jégeső','A természetben tett felfedezőutak a kertkapunk előtt kezdődnek.','../../images/termeszet_jelbesz.jpg',176,'Magyar','Keménytábla, védőborító',2967);
+INSERT INTO books(publisher_id,title,description,image,pages,language,type,cost) VALUES(21,'A második világháború','"Egyszerűen káprázatos... Nemzedékünk legkiválóbb hadtörténésze". - Tom Clancy','../../images/mas_vilagh.jpg',557,'Magyar','Keménykötés',3875);
+INSERT INTO books(publisher_id,title,description,image,pages,language,type,cost) VALUES(22,'Bakancslista - Magyarország - 777 lenyűgöző hazai kaland és úti cél','777 lenyűgöző és izgalmas hazai utazásra csábít a Bakancslista - Magyarország.','../../images/bakan_magy.jpg',360,'Magyar','Keménytábla, védőborító',6367);
+INSERT INTO books(publisher_id,title,description,image,pages,language,type,cost) VALUES(23,'Buddha beszédei - Helikon zsebkönyvek 8.','A nagy indiai vallásalapító, Buddha élete tanítással telt gondolatait a követőjéül szegődött szerzetesek szájhagyománya őrizte meg évszázadokon át.','../../images/budha_besz.jpg',122,'Magyar','Karton',1275);
 
 CREATE TABLE books_category (
     id SERIAL PRIMARY KEY,
@@ -93,6 +106,19 @@ INSERT INTO books_category(book_id,category_id) VALUES(7,6);
 INSERT INTO books_category(book_id,category_id) VALUES(8,7);
 INSERT INTO books_category(book_id,category_id) VALUES(9,8);
 INSERT INTO books_category(book_id,category_id) VALUES(10,9);
+INSERT INTO books_category(book_id,category_id) VALUES(11,10);
+INSERT INTO books_category(book_id,category_id) VALUES(12,11);
+INSERT INTO books_category(book_id,category_id) VALUES(13,12);
+INSERT INTO books_category(book_id,category_id) VALUES(14,13);
+INSERT INTO books_category(book_id,category_id) VALUES(15,14);
+INSERT INTO books_category(book_id,category_id) VALUES(16,15);
+INSERT INTO books_category(book_id,category_id) VALUES(17,16);
+INSERT INTO books_category(book_id,category_id) VALUES(18,17);
+INSERT INTO books_category(book_id,category_id) VALUES(19,18);
+INSERT INTO books_category(book_id,category_id) VALUES(20,19);
+INSERT INTO books_category(book_id,category_id) VALUES(21,20);
+INSERT INTO books_category(book_id,category_id) VALUES(22,21);
+INSERT INTO books_category(book_id,category_id) VALUES(23,22);
 
 CREATE TABLE categories (
     category_id SERIAL PRIMARY KEY,
