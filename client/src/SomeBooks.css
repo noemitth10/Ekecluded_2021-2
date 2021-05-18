@@ -9,3 +9,12 @@
     margin: 2px;
     padding: 10px;
 }
+
+.books-link{
+    color: black;
+}
+
+.books-link:hover {
+    text-decoration: none;
+    color: black;
+}
