@@ -9,6 +9,7 @@
 - Beosztás: Junior Programozó
 
 | Tesztkód | Tesztelt funkció  | Teszteset leírása                              | Státusz | Hiba oka | Időpont            |
+|----------|------------------|-------------------------------------------------|---------|----------|--------------------|
 | T01      | Backend           | A get all category megfelelően működik.        | Sikeres | -        | 2021.05.17. 22:28  |
                                 A funkciót Postman alkalmazással teszteltem.
 | T02      | Backend           | A get category by id megfelelően működik.      | Sikeres | -        | 2021.05.17. 22:32  |
