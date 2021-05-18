@@ -162,7 +162,7 @@ app.get("/books_title_desc/:category_id", function(req, res, next) {
 })
 
 app.get("/someBooks", function(req, res, next) {
-    con.query('SELECT * FROM books LIMIT 10', function (error, result, fields) {
+    con.query('SELECT * FROM books ORDER BY book_id DESC LIMIT 10', function (error, result, fields) {
           if(error){
               res.json({"status": 500, "error": error, "response": null});
           } else {
