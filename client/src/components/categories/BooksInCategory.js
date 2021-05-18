@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import '../../BooksInCategory.css';
 import { useHistory} from 'react-router-dom';
+import bookCover from "../../images/book_cover.jpg";
+import { Link } from 'react-router-dom';
 
 function BooksInCategory( props) {
 
@@ -50,7 +52,19 @@ function BooksInCategory( props) {
             <div className="grid">
                 {results.map((result, index) => (
                     <div key={index}>
-                        {result.title}<br/>
+                        <img src={bookCover} alt={result.title} width="70" height="100"/><br/>
+                        <br/>
+                        <Link className="books-link" to={{
+                            pathname: `/book-${result.book_id}`,
+                            state: { title: result.title, 
+                                description: result.description,
+                                book_id: result.book_id,
+                                pages: result.pages,
+                                language: result.language,
+                                type: result.type,
+                                cost: result.cost }}}>
+                                {result.title}
+                        </Link><br/>
                         {result.cost} Ft
                     </div>
                 ))}
